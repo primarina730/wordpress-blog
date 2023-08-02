@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html lang="ja">
-
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-
 <?php
 
 /**
@@ -19,32 +12,27 @@
 
 get_header();
 ?>
+<div class="single-page">
+	<?php
+	/* Start the Loop */
+	while (have_posts()) :
+		the_post();
+		the_title('<div class="first-headline">', '</div>');
+		the_post_thumbnail();
+	?>
+		<div class="columns-sentence">
+			<?php
+			the_content();
+			?>
 
-<body>
-	<div class="single-page">
-		<?php
-		/* Start the Loop */
-		while (have_posts()) :
-			the_post();
-			the_title('<div class="page-title">', '</div>');
-			the_post_thumbnail();
-		?>
-			<div class="columns-sentence">
-				<?php
-				the_content();
-				?>
+		</div>
+	<?php
 
-			</div>
-		<?php
+	// If comments are open or there is at least one comment, load up the comment template.
+	// if (comments_open() || get_comments_number()) {
 
-		// If comments are open or there is at least one comment, load up the comment template.
-		// if (comments_open() || get_comments_number()) {
-
-		// 	comments_template('<div class="">', '</div>');
-		// }
-		endwhile; // End of the loop.
-		?>
-	</div>
-</body>
-
-</html>
+	// 	comments_template('<div class="">', '</div>');
+	// }
+	endwhile; // End of the loop.
+	?>
+</div>

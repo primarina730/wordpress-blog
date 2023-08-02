@@ -25,7 +25,7 @@ get_header();
 	?>
 
 		<header class="page-header alignwide">
-			<h3 class="page-title">
+			<h3 class="first-headline">
 				<?php
 				printf(
 					/* translators: %s: Search term. */

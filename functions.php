@@ -4,6 +4,7 @@ function theme_enqueue_styles()
 {
     wp_enqueue_script('jquery');
     wp_enqueue_style('header', get_stylesheet_directory_uri() . '/css/header.css');
+    wp_enqueue_style('global', get_stylesheet_directory_uri() . '/css/global.css');
 
     if (is_archive()) {
         wp_enqueue_style('archive', get_stylesheet_directory_uri() . '/css/archive.css');

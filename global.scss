@@ -1,0 +1,18 @@
+$background-green: #002f37;
+$color-green: #005f6f;
+$color-yellow: #ecc100;
+
+body {
+  background-color: $background-green !important;
+}
+
+.container {
+  padding-top: 20vh;
+}
+
+.first-headline {
+  color: white !important;
+}
+
+@media screen and (max-width: 768px) {
+}

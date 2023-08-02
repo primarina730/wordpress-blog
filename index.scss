@@ -11,10 +11,12 @@ html {
   width: 100%;
   margin-top: 0 !important;
   padding-top: 0 !important;
+  cursor: url(../images/padfoot1.cur), default;
 }
 
 ul {
-  color: fff;
+  color: white;
+  padding-left: 0 !important;
 }
 
 li {
@@ -34,18 +36,24 @@ a {
   background-image: url("../images/bassethound.jpg");
 }
 
-.cols {
-  a {
-    color: white !important;
-  }
+.second-screen {
+  display: flex;
+  justify-content: center;
+  background-color: $background-green;
+  padding-bottom: 10%;
+  width: 80%;
+  margin: 0 auto;
 }
-
 .container {
-  overflow: auto;
-  scroll-snap-type: y mandatory;
+  // overflow: auto;
+  // scroll-snap-type: y mandatory;
   background-color: $background-green;
   padding-bottom: 30%;
-  height: 100vh;
+  max-width: 100%;
+}
+
+.test {
+  width: 30%;
 }
 
 .frame {
@@ -53,7 +61,7 @@ a {
   justify-content: center;
   font-weight: bold;
   border: solid 3px $color-green;
-  margin: 2em auto;
+  margin-bottom: 2em;
 }
 
 .blogTitle {
@@ -62,31 +70,28 @@ a {
 
 .latest-columns {
   margin-bottom: 10%;
-}
+  ul {
+    width: 90%;
+    .cols {
+      li {
+        padding: 1em;
+        margin: 0.5em;
+        border-bottom: 1px solid $color-green;
+      }
+      a {
+        color: white !important;
+      }
 
-.to-columns,
-.toTags {
-  color: white !important;
-  word-wrap: break-word;
-  // font-size: 0.7em;
-}
-
-.cols {
-  li {
-    padding: 1em;
-    margin: 0.5em;
-    width: 80%;
-    border-bottom: 1px solid $color-green;
+      .to-columns {
+        font-size: 1rem;
+      }
+    }
   }
 }
 
 .latest-columns-time-tags {
   color: white;
-  // font-size: 0.5em;
-}
-
-.small-letters {
-  // font-size: 0.5em;
+  font-size: 0.5rem;
 }
 
 .hover-button {
@@ -111,10 +116,6 @@ a {
   }
 }
 
-.about-me-image {
-  border-radius: 50%;
-}
-
 .search-form {
   .search-field,
   .search-submit {
@@ -124,19 +125,23 @@ a {
   .search-field:hover,
   .search-submit:active,
   .search-submit:hover {
-    color: $color-yellow !important;
     border-color: $color-yellow !important;
   }
+  .search-field:active,
+  .search-field:hover {
+    color: black !important;
+  }
+
+  .search-submit:active,
+  .search-submit:hover {
+    color: $color-yellow !important;
+  }
 }
+
 .top-headline {
   text-align: center;
   color: white;
-  // font-size: 1em;
-}
-
-.second-screen {
-  padding-top: 50%;
-  padding-bottom: 10%;
+  font-size: 2rem;
 }
 
 .viewmore-button-a {
@@ -148,74 +153,18 @@ a {
 }
 
 .about-me {
-  width: 60%;
+  .introduce-sentence {
+    font-size: 1rem;
+  }
 }
 
-.tags {
-  width: 70%;
+.toTags {
+  font-size: 0.7em;
 }
 
 .monthly-list {
   padding: 0;
   text-align: center;
-}
-.search-form {
-  .search-field {
-    width: 60%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .top-screen {
-    height: 100vh; /* 全画面表示 */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-image: url("../images/bassethound.jpg");
-  }
-}
-
-.second-screen {
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
-  padding-top: 10%;
-  background-color: $background-green;
-  gap: 10%;
-  padding-left: 3%;
-  padding-right: 3%;
-}
-
-.right-side {
-  justify-content: center;
-}
-
-.container {
-  margin: o auto;
-}
-
-.about-me {
-  width: 80%;
-}
-
-.tags {
-  width: 80%;
-}
-
-.cols {
-  li {
-    width: 400px;
-  }
-
-  .to-columns {
-    // font-size: 0.5em;
-  }
-}
-html {
-  width: 100%;
-  height: 100vh;
-  margin-top: 0 !important;
-  padding-top: 0 !important;
 }
 
 .hover-button {
@@ -240,13 +189,27 @@ html {
   }
 }
 
-.about-me-image {
-  border-radius: 50%;
-}
-
 .search-submit:active,
 .search-submit:hover {
   color: #28303d !important;
+}
+
+@media screen and (max-width: 768px) {
+  .about-me-image {
+    border-radius: 50%;
+  }
+
+  .second-screen {
+    flex-flow: column;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+  }
+
+  .about-me,
+  .tags {
+    width: 60%;
+  }
 }
 // #pickup {
 //   margin-bottom: 20px;
@@ -351,10 +314,6 @@ html {
   text-align: center;
 }
 
-html {
-  cursor: url(../images/padfoot1.cur), default;
-}
-
 // スライドショー
 .slider {
   width: 94%;
@@ -428,25 +387,25 @@ html {
 }
 /*========= レイアウトのためのCSS ===============*/
 
-body {
-  background: #eee;
-}
+// body {
+//   background: #eee;
+// }
 
-h2,
-p {
-  padding: 20px;
-}
+// h2,
+// p {
+//   padding: 20px;
+// }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+// ul {
+//   margin: 0;
+//   padding: 0;
+//   list-style: none;
+// }
 
-a {
-  color: #333;
-  &:hover,
-  :active {
-    text-decoration: none;
-  }
-}
+// a {
+//   color: #333;
+//   &:hover,
+//   :active {
+//     text-decoration: none;
+//   }
+// }

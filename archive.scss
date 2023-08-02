@@ -7,16 +7,8 @@ $color-yellow: #ecc100;
   font-family: "BIZ UDPMincho", serif !important;
 }
 
-@media screen and (max-width: 782px) {
-  html {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-  }
-}
-
 html {
   width: 100%;
-
   margin-top: 0 !important;
   padding-top: 0 !important;
   margin-bottom: 0 !important;
@@ -25,7 +17,6 @@ html {
 
 body {
   background-color: $background-green !important;
-  height: 100vh;
 }
 
 ul {
@@ -42,14 +33,9 @@ a {
 }
 
 .archive-page {
-  padding-top: 15%;
   padding-bottom: 20% !important;
   background-color: $background-green !important;
   text-align: center;
-}
-
-.page-title {
-  font-size: 3em !important;
 }
 
 .category-nav {
@@ -81,7 +67,6 @@ a {
 
 @media screen and (max-width: 768px) {
   .archive-page {
-    padding-top: 40%;
     background-color: $background-green;
     text-align: center;
     width: 100%;
@@ -89,8 +74,6 @@ a {
 
   .repeatHeadlines {
     margin: 0 auto;
-    padding-top: 10%;
-    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5%;
   }

@@ -12,8 +12,9 @@
 
 get_header();
 ?>
+
 <div class="page-page">
-    <h2 class="pageTitle"><?php the_title() ?></h2>
+    <h2 class="first-headline"><?php the_title() ?></h2>
     <?php the_post_thumbnail('<div class="page-content">') ?>
 
     <?php
