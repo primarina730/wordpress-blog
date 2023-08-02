@@ -41,15 +41,16 @@ a {
   justify-content: center;
   background-color: $background-green;
   padding-bottom: 10%;
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 .container {
-  // overflow: auto;
-  // scroll-snap-type: y mandatory;
-  background-color: $background-green;
-  padding-bottom: 30%;
-  max-width: 100%;
+  padding-top: 0 !important;
+}
+
+.left-side,
+.right-side {
+  padding-top: 20vh;
 }
 
 .test {
@@ -75,7 +76,6 @@ a {
     .cols {
       li {
         padding: 1em;
-        margin: 0.5em;
         border-bottom: 1px solid $color-green;
       }
       a {

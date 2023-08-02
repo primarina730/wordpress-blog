@@ -15,11 +15,10 @@ get_header();
 ?>
 
 
-<!-- <div class="top-screen"> -->
-<!-- </div> -->
+<div class="top-screen">
+</div>
 
 
-<!-- <div class="test"> -->
 <div class="second-screen">
 
 	<!-- 第二画面左部分 -->
