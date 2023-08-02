@@ -1,0 +1,132 @@
+$background-green: #002f37;
+$color-green: #005f6f;
+$color-yellow: #ecc100;
+
+* {
+  color: white;
+  font-family: "BIZ UDPMincho", serif !important;
+}
+
+html {
+  width: 100%;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  background-color: $background-green;
+}
+
+.search-page {
+  background-color: $background-green;
+}
+
+ul {
+  color: fff;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white !important;
+}
+
+img {
+  width: 600px !important;
+}
+
+article {
+  max-width: 80% !important;
+  border-bottom: 3px solid $color-yellow !important;
+  margin: 0 auto;
+  &:last-child {
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+  }
+}
+.titleAndNavigator {
+  padding: 3%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+}
+
+.blogTitle {
+  color: $color-yellow !important;
+}
+
+.ap_navigation {
+  color: $color-yellow !important;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: $color-yellow;
+    transition: all 0.3s ease 0s;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+.page-header {
+  border-color: $color-yellow !important;
+  .page-title {
+    padding-top: 20%;
+    font-size: 3em !important;
+  }
+}
+
+.entry-header {
+  h2 {
+    padding-top: 5%;
+  }
+}
+
+.entry-title {
+  a {
+    font-size: 1em !important;
+  }
+}
+
+.post-thumbnail {
+  .wp-post-image {
+    margin-top: 0 !important;
+  }
+}
+
+.sp_br {
+  display: none; //768px以上では改行タグを無効に。
+}
+
+@media screen and (max-width: 768px) {
+  .sp_br {
+    display: block; //768px未満で改行タグを有効に。
+  }
+
+  img {
+    width: 60% !important;
+  }
+
+  .page-header {
+    border-color: $color-yellow !important;
+    .page-title {
+      padding-top: 50%;
+      font-size: 3em !important;
+    }
+  }
+}

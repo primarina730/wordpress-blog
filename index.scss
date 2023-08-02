@@ -1,0 +1,464 @@
+$background-green: #002f37;
+$color-green: #005f6f;
+$color-yellow: #ecc100;
+
+* {
+  color: white;
+  font-family: "BIZ UDPMincho", serif !important;
+}
+
+html {
+  width: 100%;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+ul {
+  color: fff;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white !important;
+}
+
+.top-screen {
+  height: 100vh; /* 全画面表示 */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("../images/bassethound.jpg");
+}
+
+.cols {
+  a {
+    color: white !important;
+  }
+}
+
+.container {
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  background-color: $background-green;
+  padding-bottom: 30%;
+  height: 100vh;
+}
+
+.frame {
+  padding: 5%;
+  justify-content: center;
+  font-weight: bold;
+  border: solid 3px $color-green;
+  margin: 2em auto;
+}
+
+.blogTitle {
+  color: $color-yellow !important;
+}
+
+.latest-columns {
+  margin-bottom: 10%;
+}
+
+.to-columns,
+.toTags {
+  color: white !important;
+  word-wrap: break-word;
+  font-size: 0.7em;
+}
+
+.cols {
+  li {
+    padding: 1em;
+    margin: 0.5em;
+    width: 80%;
+    border-bottom: 1px solid $color-green;
+  }
+}
+
+.latest-columns-time-tags {
+  color: white;
+  font-size: 0.5em;
+}
+
+.small-letters {
+  font-size: 0.5em;
+}
+
+.hover-button {
+  display: inline-block;
+  padding: 0.6em 2em;
+  margin: 0 0 1em;
+  background: black !important;
+  color: white !important;
+  border: 1px solid $color-yellow !important;
+  vertical-align: middle;
+  text-decoration: none;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  &:hover {
+    background-color: $color-yellow !important;
+    color: black !important;
+    border: 1px solid $color-yellow !important;
+  }
+}
+
+.about-me-image {
+  border-radius: 50%;
+}
+
+.search-form {
+  .search-field,
+  .search-submit {
+    border: white solid 2px !important;
+  }
+  .search-field:active,
+  .search-field:hover,
+  .search-submit:active,
+  .search-submit:hover {
+    color: $color-yellow !important;
+    border-color: $color-yellow !important;
+  }
+}
+.top-headline {
+  text-align: center;
+  color: white;
+  font-size: 1em;
+}
+
+.second-screen {
+  padding-top: 50%;
+  padding-bottom: 10%;
+}
+
+.nav-menu {
+  white-space: nowrap;
+  font-size: 1rem;
+}
+
+.viewmore-button-a {
+  text-align: center;
+}
+
+.search-form {
+  display: flex;
+}
+
+.about-me {
+  width: 60%;
+}
+
+.tags {
+  width: 70%;
+}
+
+.monthly-list {
+  padding: 0;
+  text-align: center;
+}
+.search-form {
+  .search-field {
+    width: 60%;
+  }
+}
+
+.sp_br {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .sp_br {
+    display: none;
+    .top-screen {
+      height: 100vh; /* 全画面表示 */
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      background-image: url("../images/bassethound.jpg");
+    }
+  }
+
+  .second-screen {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    padding-top: 10%;
+    background-color: $background-green;
+    gap: 10%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .right-side {
+    justify-content: center;
+  }
+
+  .container {
+    margin: o auto;
+  }
+
+  .about-me {
+    width: 80%;
+  }
+
+  .tags {
+    width: 80%;
+  }
+
+  .cols {
+    li {
+      width: 400px;
+    }
+
+    .to-columns {
+      font-size: 0.5em;
+    }
+  }
+  html {
+    width: 100%;
+    height: 100vh;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+}
+
+.hover-button {
+  display: inline-block;
+  padding: 0.6em 2em;
+  margin: 0 0 1em;
+  background: #333;
+  color: white;
+  border: 1px solid black;
+  vertical-align: middle;
+  text-decoration: none;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+
+  &:hover {
+    color: black !important;
+    background-color: white;
+  }
+}
+
+.about-me-image {
+  border-radius: 50%;
+}
+
+.search-submit:active,
+.search-submit:hover {
+  color: #28303d !important;
+}
+// #pickup {
+//   margin-bottom: 20px;
+// }
+// #pickup-title {
+//   margin: 0.8em 0;
+//   font-size: 20px;
+//   font-weight: bold;
+//   background-color: #00a0e9;
+//   color: white;
+//   padding: 0.4em;
+//   border-radius: 3px;
+//   text-align: center;
+// }
+// .pickup-content {
+//   display: inline-block;
+//   margin-right: 10px;
+//   width: 300px;
+//   height: auto;
+//   vertical-align: top;
+// }
+// .pickup-content:last-child {
+//   margin-right: 0;
+// }
+
+// /* アイキャッチの大きさ */
+// .pickup-thumbnail {
+//   margin: 0 0 10px;
+// }
+// .pickup-thumbnail:last-child {
+//   margin-right: 0;
+// }
+// .pickup-thumbnail {
+//   img {
+//     width: 100%;
+//     height: 100%;
+//   }
+// }
+// #pickup {
+//   &.post-info {
+//     margin: 0;
+//     white-space: normal;
+//     font-size: 12px;
+//     line-height: 1.6;
+//   }
+
+//   &.post-info a {
+//     color: #000;
+//   }
+// }
+//   #pickup .post-info a {
+//     color: #000;
+//   }
+/* 横スクロール */
+// .scroll-wrapper {
+//   position: relative;
+// }
+// .scroll-left {
+//   overflow-x: scroll;
+//   overflow-y: hidden;
+//   padding-bottom: 10px;
+//   -webkit-overflow-scrolling: touch;
+// }
+// .scroll-content {
+//   display: inline-block;
+//   white-space: nowrap;
+//   width: 300px;
+// }
+/* 左右のボタン */
+// .leftbutton,
+// .rightbutton {
+//   font-size: 26px;
+//   position: absolute;
+//   top: 40%;
+//   background-color: #fff;
+//   color: #000;
+//   padding: 20px 10px;
+// }
+// .leftbutton {
+//   display: none;
+//   left: 0;
+//   border-radius: 0 3px 3px 0;
+//   box-shadow: 1px 1px 1px #888;
+// }
+// .rightbutton {
+//   right: 0;
+//   border-radius: 3px 0 0 3px;
+//   box-shadow: -1px 1px 1px #888;
+// }
+
+/*動き確認用ボタン*/
+.btn {
+  display: inline-block;
+  min-width: 300px;
+  margin: 20px;
+  padding: 20px;
+  color: #fff;
+  background-color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+
+html {
+  cursor: url(../images/padfoot1.cur), default;
+}
+
+// スライドショー
+.slider {
+  width: 94%;
+  margin: 0 auto;
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .slick-slide {
+    margin: 0 10px;
+  }
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute; /*絶対配置にする*/
+  top: 42%;
+  cursor: pointer; /*マウスカーソルを指マークに*/
+  outline: none; /*クリックをしたら出てくる枠線を消す*/
+  border-top: 2px solid #666; /*矢印の色*/
+  border-right: 2px solid #666; /*矢印の色*/
+  height: 15px;
+  width: 15px;
+}
+
+.slick-prev {
+  /*戻る矢印の位置と形状*/
+  left: -1.5%;
+  transform: rotate(-135deg);
+}
+
+.slick-next {
+  /*次へ矢印の位置と形状*/
+  right: -1.5%;
+  transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+.slick-dots {
+  li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+}
+
+.slick-dots {
+  button {
+    color: transparent;
+    outline: none;
+    width: 8px; /*ドットボタンのサイズ*/
+    height: 8px; /*ドットボタンのサイズ*/
+    display: block;
+    border-radius: 50%;
+    background: #ccc; /*ドットボタンの色*/
+  }
+}
+
+.slick-dots {
+  .slick-active {
+    button {
+      background: #333; /*ドットボタンの現在地表示の色*/
+    }
+  }
+}
+/*========= レイアウトのためのCSS ===============*/
+
+body {
+  background: #eee;
+}
+
+h2,
+p {
+  padding: 20px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: #333;
+  &:hover,
+  :active {
+    text-decoration: none;
+  }
+}
