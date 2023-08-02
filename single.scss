@@ -69,61 +69,7 @@ img {
   width: 600px !important;
 }
 
-.titleAndNavigator {
-  padding: 3%;
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
-  width: 100%;
-  top: 0px;
-  h2 {
-    font-size: 1em !important;
-  }
-}
-
-.blogTitle {
-  color: $color-yellow !important;
-}
-
-.ap_navigation {
-  color: $color-yellow !important;
-  display: inline-block;
-  text-decoration: none;
-  position: relative;
-
-  &::after {
-    position: absolute;
-    content: "";
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background: $color-yellow;
-    transition: all 0.3s ease 0s;
-  }
-
-  &:hover {
-    cursor: pointer;
-  }
-
-  &:hover::after {
-    width: 100%;
-  }
-}
-
-.nav-menu {
-  white-space: nowrap;
-  font-size: 1rem;
-}
-.sp_br {
-  display: none; //768px以上では改行タグを無効に。
-}
-
 @media screen and (max-width: 768px) {
-  .sp_br {
-    display: block; //768px未満で改行タグを有効に。
-  }
-
   .single-page {
     padding-top: 40%;
   }
@@ -138,15 +84,6 @@ img {
     margin: 0 auto;
   }
 
-  .nav-menu {
-    font-size: 0.8rem;
-  }
-
-  .titleAndNavigator {
-    h2 {
-      font-size: 1.5rem;
-    }
-  }
   .columns-sentence {
     p {
       font-size: 0.8em;

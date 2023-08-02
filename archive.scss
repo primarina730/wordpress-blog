@@ -7,21 +7,10 @@ $color-yellow: #ecc100;
   font-family: "BIZ UDPMincho", serif !important;
 }
 
-.sp_br {
-  display: none; //768px以上では改行タグを無効に。
-}
-
 @media screen and (max-width: 782px) {
   html {
     margin-top: 0 !important;
     padding-top: 0 !important;
-  }
-
-  .sp_br {
-    display: block; //768px未満で改行タグを有効に。
-  }
-  .blogTitle {
-    font-size: 0.8em;
   }
 }
 
@@ -50,45 +39,6 @@ li {
 a {
   text-decoration: none;
   color: white !important;
-}
-
-.titleAndNavigator {
-  padding: 3%;
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
-  width: 100%;
-  top: 0px;
-}
-
-.blogTitle {
-  color: $color-yellow !important;
-}
-
-.ap_navigation {
-  color: $color-yellow !important;
-  display: inline-block;
-  text-decoration: none;
-  position: relative;
-
-  &::after {
-    position: absolute;
-    content: "";
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background: $color-yellow;
-    transition: all 0.3s ease 0s;
-  }
-
-  &:hover {
-    cursor: pointer;
-  }
-
-  &:hover::after {
-    width: 100%;
-  }
 }
 
 .archive-page {
