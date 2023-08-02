@@ -44,10 +44,6 @@ $color-yellow: #ecc100;
     width: 100%;
   }
 }
-.nav-menu {
-  white-space: nowrap;
-  font-size: 1rem;
-}
 .sp_br {
   display: none; //768px以上では改行タグを無効に。
 }
@@ -57,13 +53,17 @@ $color-yellow: #ecc100;
     display: block; //768px未満で改行タグを有効に。
   }
 
-  .nav-menu {
-    font-size: 0.8rem;
-  }
-
   .titleAndNavigator {
     h2 {
       font-size: 1.5rem;
     }
   }
+
+  .nav-menu {
+    font-size: 0.8rem;
+  }
+
+  //   .ap_navigation {
+  //     font-size: 0.8rem;
+  //   }
 }

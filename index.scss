@@ -68,7 +68,7 @@ a {
 .toTags {
   color: white !important;
   word-wrap: break-word;
-  font-size: 0.7em;
+  // font-size: 0.7em;
 }
 
 .cols {
@@ -82,11 +82,11 @@ a {
 
 .latest-columns-time-tags {
   color: white;
-  font-size: 0.5em;
+  // font-size: 0.5em;
 }
 
 .small-letters {
-  font-size: 0.5em;
+  // font-size: 0.5em;
 }
 
 .hover-button {
@@ -131,17 +131,12 @@ a {
 .top-headline {
   text-align: center;
   color: white;
-  font-size: 1em;
+  // font-size: 1em;
 }
 
 .second-screen {
   padding-top: 50%;
   padding-bottom: 10%;
-}
-
-.nav-menu {
-  white-space: nowrap;
-  font-size: 1rem;
 }
 
 .viewmore-button-a {
@@ -170,64 +165,57 @@ a {
   }
 }
 
-.sp_br {
-  display: block;
+@media screen and (min-width: 768px) {
+  .top-screen {
+    height: 100vh; /* 全画面表示 */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url("../images/bassethound.jpg");
+  }
 }
 
-@media screen and (min-width: 768px) {
-  .sp_br {
-    display: none;
-    .top-screen {
-      height: 100vh; /* 全画面表示 */
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center;
-      background-image: url("../images/bassethound.jpg");
-    }
+.second-screen {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  padding-top: 10%;
+  background-color: $background-green;
+  gap: 10%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.right-side {
+  justify-content: center;
+}
+
+.container {
+  margin: o auto;
+}
+
+.about-me {
+  width: 80%;
+}
+
+.tags {
+  width: 80%;
+}
+
+.cols {
+  li {
+    width: 400px;
   }
 
-  .second-screen {
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
-    padding-top: 10%;
-    background-color: $background-green;
-    gap: 10%;
-    padding-left: 3%;
-    padding-right: 3%;
+  .to-columns {
+    // font-size: 0.5em;
   }
-
-  .right-side {
-    justify-content: center;
-  }
-
-  .container {
-    margin: o auto;
-  }
-
-  .about-me {
-    width: 80%;
-  }
-
-  .tags {
-    width: 80%;
-  }
-
-  .cols {
-    li {
-      width: 400px;
-    }
-
-    .to-columns {
-      font-size: 0.5em;
-    }
-  }
-  html {
-    width: 100%;
-    height: 100vh;
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-  }
+}
+html {
+  width: 100%;
+  height: 100vh;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
 .hover-button {
