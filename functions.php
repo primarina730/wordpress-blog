@@ -23,8 +23,8 @@ function theme_enqueue_styles()
         );
     }
     // wp_enqueue_script('slide-js', get_stylesheet_directory_uri() . '/js/slide.js', array('slide'), '1.0.0', true);
-    // wp_enqueue_script('pickup-js', get_stylesheet_directory_uri() . '/js/pickup.js', array('jquery'), '1.0.0', true);
-    wp_enqueue_script('slider-js', get_stylesheet_directory_uri(), 'js/slider.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_script('pickup-js', get_stylesheet_directory_uri() . '/js/pickup.js', array('jquery'), '1.0.0', true);
+    // wp_enqueue_script('slider-js', get_stylesheet_directory_uri(), 'js/slider.js', array('jquery'), '1.0.0', true);
 }
 
 
