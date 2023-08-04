@@ -2,31 +2,24 @@ $background-green: #002f37;
 $color-green: #005f6f;
 $color-yellow: #ecc100;
 
-h1,
-h2,
-p,
-a {
-  font-family: "BIZ UDPMincho", serif !important;
-}
-
-.comment-author {
-  .fn {
-    color: $color-yellow;
-  }
-}
-
 img {
   padding-top: 5%;
   padding-bottom: 5%;
+  width: 600px !important;
 }
 
 .single-page {
   background-color: $background-green;
   padding-bottom: 15%;
   text-align: center;
+  width: 100%;
 
-  p {
-    color: white;
+  .first-headline {
+    font-size: 2rem;
+    margin: 0 auto;
+  }
+  .columns-sentence {
+    font-size: 1rem;
   }
 }
 
@@ -35,30 +28,19 @@ img {
   margin: 0 auto;
 }
 
-.page-title {
-  text-align: center;
-  // font-size: 3rem !important;
-  color: white !important;
-}
-
-img {
-  width: 600px !important;
-}
-
 @media screen and (max-width: 768px) {
   img {
     width: 70% !important;
   }
-
-  .columns-sentence {
-    p {
-      font-size: 0.8em;
+  .single-page {
+    .first-headline {
+      font-size: 1rem;
+      width: 80%;
+    }
+    .columns-sentence {
+      font-size: 0.8rem;
     }
   }
-}
-
-html {
-  cursor: url(../images/padfoot1.cur), default;
 }
 
 .wp-block-liquid-speech-balloon {
