@@ -11,7 +11,6 @@ body {
 }
 
 .archive-page {
-  padding-bottom: 20% !important;
   background-color: $background-green !important;
   text-align: center;
 }
@@ -54,21 +53,15 @@ body {
     margin: 0 auto;
     grid-template-columns: 1fr 1fr;
     gap: 5%;
-  }
-
-  body {
-    font-size: 1rem !important;
-  }
-
-  .blog-list__list-item {
-    .blog-item__title {
-      font-size: 1.2rem !important;
+    .blog-list__list-item {
+      .blog-item__title {
+        font-size: 0.8rem !important;
+      }
     }
-  }
-
-  .blog-item__content {
-    p {
-      font-size: 0.8em;
+    .blog-item__content {
+      p {
+        font-size: 0.6rem;
+      }
     }
   }
 }

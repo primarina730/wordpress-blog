@@ -24,14 +24,12 @@ html {
 .top-headline {
   text-align: center;
   color: white;
-  font-size: 2rem;
 }
 
 .second-screen {
   display: flex;
   justify-content: center;
   background-color: $background-green;
-  padding-bottom: 10%;
   width: 70%;
   margin: 0 auto;
 }
@@ -147,9 +145,6 @@ html {
     line-height: 1 !important;
   }
 
-  .container {
-    display: contents;
-  }
   .titleAndNavigator {
     .nav-menu {
       line-height: 1.7;
@@ -170,7 +165,6 @@ html {
       width: 80%;
       margin: 0 auto;
       .latest-columns {
-        order: 1;
         ul {
           width: 100%;
           li {
@@ -183,22 +177,13 @@ html {
             }
           }
         }
-      }
-      .search-form {
-        order: 3;
-        flex-wrap: nowrap;
-        input[type="search"] {
-          padding: 0;
-        }
-        input[type="submit"] {
-          padding: 0 5%;
-          font-size: 0.5rem;
+        .viewmore-button-a {
+          font-size: 1rem;
         }
       }
     }
     .right-side {
       width: 100%;
-      order: 2;
       .about-me {
         width: 80%;
         margin: 0 auto;
@@ -210,6 +195,19 @@ html {
         margin-bottom: 10%;
         line-height: 1.7;
       }
+    }
+  }
+
+  .search-form {
+    flex-wrap: nowrap;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    input[type="search"] {
+      padding: 0;
+    }
+    input[type="submit"] {
+      padding: 0 5%;
+      font-size: 0.5rem;
     }
   }
   .mobile-search {
