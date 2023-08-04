@@ -138,11 +138,18 @@ html {
   }
 }
 
+.mobile-search {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   html {
     line-height: 1 !important;
   }
 
+  .container {
+    display: contents;
+  }
   .titleAndNavigator {
     .nav-menu {
       line-height: 1.7;
@@ -163,6 +170,7 @@ html {
       width: 80%;
       margin: 0 auto;
       .latest-columns {
+        order: 1;
         ul {
           width: 100%;
           li {
@@ -177,6 +185,7 @@ html {
         }
       }
       .search-form {
+        order: 3;
         flex-wrap: nowrap;
         input[type="search"] {
           padding: 0;
@@ -189,6 +198,7 @@ html {
     }
     .right-side {
       width: 100%;
+      order: 2;
       .about-me {
         width: 80%;
         margin: 0 auto;
@@ -201,6 +211,13 @@ html {
         line-height: 1.7;
       }
     }
+  }
+  .mobile-search {
+    display: block;
+  }
+
+  .pc-search {
+    display: none;
   }
 }
 // #pickup {

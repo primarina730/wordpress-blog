@@ -39,20 +39,28 @@ img {
     }
     .columns-sentence {
       font-size: 0.8rem;
+      .wp-block-liquid-speech-balloon {
+        .liquid-speech-balloon-text {
+          width: 100%;
+          padding: 10px 20px;
+          p {
+            color: black;
+          }
+        }
+      }
     }
   }
 }
 
 .wp-block-liquid-speech-balloon {
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
   padding-bottom: 3%;
 
-  p {
-    color: black;
-  }
-
   .liquid-speech-balloon-text {
-    width: 70% !important;
+    width: 70%;
+    p {
+      color: black;
+    }
   }
 }

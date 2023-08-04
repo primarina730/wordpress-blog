@@ -46,8 +46,9 @@ get_header();
 				<a href=<?php echo (get_post_type_archive_link("post") . "/blog") ?> class="viewMore hover-button">View More</a>
 			</div>
 		</div>
-
-		<?php get_search_form(); ?>
+		<div class="pc-search">
+			<?php get_search_form(); ?>
+		</div>
 	</div>
 
 	<!-- 第二画面右部分 -->
@@ -76,6 +77,9 @@ get_header();
 			<ul class="monthly-list">
 				<?php wp_get_archives('post_type=post&type=monthly&show_post_count=1'); ?>
 			</ul>
+		</div>
+		<div class="mobile-search">
+			<?php get_search_form(); ?>
 		</div>
 	</div>
 </div>
