@@ -19,6 +19,7 @@ get_header();
 	echo '<div class="category-nav"><ul class="categories">';
 	wp_list_categories('title_li=');
 	echo '</ul></div>'; ?>
+
 	<div class="repeatHeadlines">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<?php if ($description) : ?>

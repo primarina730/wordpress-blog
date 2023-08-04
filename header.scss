@@ -11,6 +11,7 @@ $color-yellow: #ecc100;
 }
 
 .titleAndNavigator {
+  z-index: 10;
   padding: 3%;
   display: flex;
   justify-content: space-between;

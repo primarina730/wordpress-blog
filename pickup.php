@@ -8,7 +8,7 @@ $pickupPosts = get_posts($args);
 if ($pickupPosts) : ?>
 
     <div class="clearfix">
-        <p id="pickup-title">ピックアップ記事</p>
+        <h2 class="top-headline">Pick Up</h2>
 
         <div class="scroll-content">
             <?php foreach ($pickupPosts as $post) : setup_postdata($post); ?>
