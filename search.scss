@@ -2,14 +2,6 @@ $background-green: #002f37;
 $color-green: #005f6f;
 $color-yellow: #ecc100;
 
-html {
-  background-color: $background-green;
-}
-
-.search-page {
-  background-color: $background-green;
-}
-
 img {
   width: 600px !important;
 }
@@ -26,15 +18,42 @@ article {
 
 .page-header {
   border-color: $color-yellow !important;
-  .page-title {
-    padding-top: 20%;
-    // font-size: 3em !important;
+}
+
+.search-form {
+  display: flex;
+
+  .search-field,
+  .search-submit {
+    border: white solid 2px !important;
+  }
+  .search-field:active,
+  .search-field:hover,
+  .search-submit:active,
+  .search-submit:hover {
+    border-color: $color-yellow !important;
+  }
+  .search-field:active,
+  .search-field:hover {
+    color: black !important;
+  }
+
+  .search-submit:active,
+  .search-submit:hover {
+    color: $color-yellow !important;
   }
 }
 
 .entry-header {
-  h2 {
-    padding-top: 5%;
+  margin-bottom: 0 !important;
+  .entry-title {
+    font-size: 2rem;
+  }
+}
+
+.entry-footer {
+  .tags-links {
+    display: none;
   }
 }
 
@@ -53,7 +72,35 @@ article {
     border-color: $color-yellow !important;
     .page-title {
       padding-top: 50%;
-      // font-size: 3em !important;
     }
+  }
+
+  .search-form {
+    flex-wrap: nowrap;
+    input[type="field"] {
+      padding-top: 5%;
+      padding-bottom: 5%;
+    }
+
+    input[type="search"] {
+      padding: 0;
+    }
+
+    input[type="submit"] {
+      padding: 0 5%;
+      font-size: 0.5rem;
+    }
+  }
+  .entry-header {
+    .entry-title {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+  }
+  .entry-content {
+    font-size: 0.9rem;
+  }
+  .entry-footer {
+    font-size: 0.7rem !important;
   }
 }

@@ -16,10 +16,6 @@ img {
   text-align: center;
 }
 
-.pageTitle {
-  color: white;
-}
-
 .details {
   appearance: none;
   -webkit-appearance: none;
@@ -77,8 +73,7 @@ img {
   text-align: center;
 
   p {
-    color: white;
-    // font-size: 0.8em;
+    font-size: 0.8rem !important;
   }
 }
 
