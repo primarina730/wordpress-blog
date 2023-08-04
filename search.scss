@@ -2,33 +2,12 @@ $background-green: #002f37;
 $color-green: #005f6f;
 $color-yellow: #ecc100;
 
-* {
-  color: white;
-  font-family: "BIZ UDPMincho", serif !important;
-}
-
 html {
-  width: 100%;
-  margin-top: 0 !important;
-  padding-top: 0 !important;
   background-color: $background-green;
 }
 
 .search-page {
   background-color: $background-green;
-}
-
-ul {
-  color: fff;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: white !important;
 }
 
 img {
@@ -56,12 +35,6 @@ article {
 .entry-header {
   h2 {
     padding-top: 5%;
-  }
-}
-
-.entry-title {
-  a {
-    // font-size: 1em !important;
   }
 }
 

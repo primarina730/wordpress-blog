@@ -2,10 +2,6 @@ $background-green: #002f37;
 $color-green: #005f6f;
 $color-yellow: #ecc100;
 
-* {
-  font-family: "BIZ UDPMincho", serif !important;
-}
-
 html {
   height: 100vh;
 }
@@ -19,14 +15,6 @@ a {
 
 h3 {
   text-align: left;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
 }
 
 img {
@@ -69,7 +57,7 @@ img {
 #submit {
   display: inline-block;
   padding: 0.6em 2em;
-  margin: 0 0 1em;
+  // margin: 0 0 1em;
   background: #333;
   color: white;
   border: 1px solid $color-yellow;
@@ -116,6 +104,10 @@ img {
 
   #message {
     height: 100px;
+  }
+
+  #submit {
+    margin-top: 5%;
   }
 
   .contact_information {
