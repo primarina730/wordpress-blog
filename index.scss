@@ -31,10 +31,6 @@ html {
   padding-top: 20vh;
 }
 
-.test {
-  width: 30%;
-}
-
 .frame {
   padding: 5%;
   justify-content: center;
@@ -51,18 +47,16 @@ html {
   margin-bottom: 10%;
   ul {
     width: 90%;
-    .cols {
-      li {
-        padding: 1em;
-        border-bottom: 1px solid $color-green;
-      }
-      a {
-        color: white !important;
-      }
+    li {
+      padding: 1em;
+      border-bottom: 1px solid $color-green;
+    }
+    a {
+      color: white !important;
+    }
 
-      .to-columns {
-        font-size: 1rem;
-      }
+    .to-columns {
+      font-size: 1rem;
     }
   }
 }
@@ -173,6 +167,9 @@ html {
 }
 
 @media screen and (max-width: 768px) {
+  html {
+    line-height: 1 !important;
+  }
   .about-me-image {
     border-radius: 50%;
   }
@@ -182,11 +179,34 @@ html {
     padding-left: 0;
     padding-right: 0;
     margin: 0 auto;
-  }
-
-  .about-me,
-  .tags {
-    width: 60%;
+    width: 80%;
+    .left-side {
+      .latest-columns {
+        ul {
+          li {
+            padding: 0.5rem;
+            .latest-columns-time-tags {
+              font-weight: bold;
+            }
+            .to-columns {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+      .search-form {
+        flex-wrap: nowrap;
+      }
+    }
+    .right-side {
+      .about-me {
+        width: 60%;
+      }
+      .tags {
+        width: 60%;
+        line-height: 1.7;
+      }
+    }
   }
 }
 // #pickup {

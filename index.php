@@ -34,12 +34,10 @@ get_header();
 				foreach ($posts as $post) : // ループの開始
 					setup_postdata($post); // 記事データの取得
 				?>
-					<div class="cols">
-						<li>
-							<p class="latest-columns-time-tags"><?php the_time(get_option('date_format')); ?>&emsp;#<?php the_tags(""); ?></p>
-							<a href="<?php the_permalink(); ?>" class="to-columns"><?php the_title(); ?></a>
-						</li>
-					</div>
+					<li>
+						<p class="latest-columns-time-tags"><?php the_time(get_option('date_format')); ?>&emsp;#<?php the_tags(""); ?></p>
+						<a href="<?php the_permalink(); ?>" class="to-columns"><?php the_title(); ?></a>
+					</li>
 				<?php
 				endforeach; // ループの終了
 				?>
