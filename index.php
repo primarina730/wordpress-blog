@@ -42,11 +42,11 @@ get_header();
 				endforeach; // ループの終了
 				?>
 			</ul>
+			<div class="viewmore-button-a">
+				<a href=<?php echo (get_post_type_archive_link("post") . "/blog") ?> class="viewMore hover-button">View More</a>
+			</div>
 		</div>
-		</ul>
-		<div class="viewmore-button-a">
-			<a href=<?php echo (get_post_type_archive_link("post") . "/blog") ?> class="viewMore hover-button">View More</a>
-		</div>
+
 		<?php get_search_form(); ?>
 	</div>
 
@@ -72,7 +72,7 @@ get_header();
 			}
 			?>
 		</div>
-		<div class="topArchive">
+		<div class="top-archive">
 			<ul class="monthly-list">
 				<?php wp_get_archives('post_type=post&type=monthly&show_post_count=1'); ?>
 			</ul>
