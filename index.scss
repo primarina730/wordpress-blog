@@ -219,3 +219,27 @@ html {
     display: none;
   }
 }
+
+.arrow,
+.arrow label {
+  position: absolute;
+  width: 50px;
+  height: 100%;
+}
+.prev,
+.arrow label {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+.arrow label {
+  pointer-events: none;
+}
+#switch0:checked ~ .next label[for="switch1"],
+#switch1:checked ~ .next label[for="switch2"],
+#switch2:checked ~ .next label[for="switch3"],
+#switch3:checked ~ .next label[for="switch4"],
+#switch4:checked ~ .next label[for="switch0"] {
+  pointer-events: auto;
+}
