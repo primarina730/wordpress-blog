@@ -220,26 +220,157 @@ html {
   }
 }
 
-.arrow,
-.arrow label {
-  position: absolute;
-  width: 50px;
-  height: 100%;
-}
-.prev,
-.arrow label {
-  left: 0;
-}
-.next {
-  right: 0;
-}
-.arrow label {
-  pointer-events: none;
-}
-#switch0:checked ~ .next label[for="switch1"],
-#switch1:checked ~ .next label[for="switch2"],
-#switch2:checked ~ .next label[for="switch3"],
-#switch3:checked ~ .next label[for="switch4"],
-#switch4:checked ~ .next label[for="switch0"] {
-  pointer-events: auto;
-}
+// .arrow,
+// .arrow label {
+//   position: absolute;
+//   width: 50px;
+//   height: 100%;
+// }
+// .prev,
+// .arrow label {
+//   left: 0;
+// }
+// .next {
+//   right: 0;
+// }
+// .arrow label {
+//   pointer-events: none;
+// }
+// #switch0:checked ~ .next label[for="switch1"],
+// #switch1:checked ~ .next label[for="switch2"],
+// #switch2:checked ~ .next label[for="switch3"],
+// #switch3:checked ~ .next label[for="switch4"],
+// #switch4:checked ~ .next label[for="switch0"]{
+//   pointer-events: auto;
+// }
+
+// .slideshow {
+//   position: relative;
+//   overflow: hidden;
+// }
+// input[name="slideshow"] {
+//   display: none;
+// }
+
+// .slideContents {
+//   display: flex;
+//   position: relative;
+//   width: 500%;
+//   height: 100%;
+//   background: #86c0de;
+//   text-align: center;
+//   -webkit-user-select: none;
+//   user-select: none;
+//   transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+// }
+// .slideContents section {
+//   width: 100%;
+// }
+// .slideContents section img {
+//   max-width: 100%;
+//   height: auto;
+//   padding: 0 50px;
+//   box-sizing: border-box;
+//   vertical-align: middle;
+// }
+// @media (min-width: 520px) {
+//   .slideContents section img {
+//     aspect-ratio: 3 / 1;
+//     object-fit: cover;
+//   }
+// }
+
+// /* :::::: arrows :::::: */
+// .arrow,
+// .arrow label,
+// .arrow .ico {
+//   position: absolute;
+// }
+// .arrow {
+//   top: 0;
+//   margin: 0;
+//   transition: background 0.3s;
+// }
+// .prev {
+//   left: 0;
+// }
+// .next {
+//   right: 0;
+// }
+// .arrow:hover {
+//   background: rgba(255, 255, 255, 0.2);
+// }
+// .arrow,
+// .arrow label {
+//   cursor: pointer;
+//   width: 50px;
+//   height: 100%;
+// }
+// .arrow label {
+//   top: 0;
+//   left: 0;
+//   z-index: 1;
+// }
+// .arrow .ico {
+//   top: calc(50% - 6px);
+//   width: 12px;
+//   height: 12px;
+//   border-top: 3px solid #fff;
+//   opacity: 0;
+// }
+// .prev .ico {
+//   left: 50%;
+//   border-left: 3px solid #fff;
+//   transform: rotate(-45deg);
+//   transition: left 0.3s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.3s;
+// }
+// .next .ico {
+//   right: 50%;
+//   border-right: 3px solid #fff;
+//   transform: rotate(45deg);
+//   transition: right 0.3s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.3s;
+// }
+// .arrow:hover .ico {
+//   opacity: 0.6;
+// }
+// .prev:hover .ico {
+//   left: calc(50% - 6px);
+// }
+// .next:hover .ico {
+//   right: calc(50% - 6px);
+// }
+
+/* :::::: mechanism :::::: */
+// #switch0:checked ~ .slideContents {
+//   transform: translateX(0);
+// }
+// #switch1:checked ~ .slideContents {
+//   transform: translateX(-20%);
+// }
+// #switch2:checked ~ .slideContents {
+//   transform: translateX(-40%);
+// }
+// #switch3:checked ~ .slideContents {
+//   transform: translateX(-60%);
+// }
+// #switch4:checked ~ .slideContents {
+//   transform: translateX(-80%);
+// }
+
+/* :::::: arrow mechanism :::::: */
+// .arrow label {
+//   pointer-events: none;
+// }
+
+// #switch1:checked ~ .prev label[for="switch0"],
+// #switch2:checked ~ .prev label[for="switch1"],
+// #switch3:checked ~ .prev label[for="switch2"],
+// #switch4:checked ~ .prev label[for="switch3"],
+// #switch0:checked ~ .prev label[for="switch4"],
+// #switch1:checked ~ .next label[for="switch2"],
+// #switch2:checked ~ .next label[for="switch3"],
+// #switch3:checked ~ .next label[for="switch4"],
+// #switch4:checked ~ .next label[for="switch0"],
+// #switch0:checked ~ .next label[for="switch1"] {
+//   pointer-events: auto;
+// }

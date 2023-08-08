@@ -85,5 +85,4 @@ get_header();
 </div>
 <?php get_template_part('pickup'); //ピックアップ記事 
 ?>
-
 <?php get_footer(); ?>
