@@ -17,7 +17,7 @@ get_header();
 	/* Start the Loop */
 	while (have_posts()) :
 		the_post();
-		the_title('<div class="first-headline">', '</div>');
+		the_title('<div class="first-headline single-title">', '</div>');
 		the_post_thumbnail();
 	?>
 		<div class="columns-sentence">
