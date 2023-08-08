@@ -15,18 +15,13 @@ function theme_enqueue_styles()
     } else if (is_single()) {
         wp_enqueue_style('single', get_stylesheet_directory_uri() . '/css/single.css');
     } else {
-        // wp_enqueue_style('parent-style', get_template_directory_uri() . '/css/index.css');
+        wp_enqueue_style('parent-style', get_template_directory_uri() . '/css/index.css');
         wp_enqueue_style(
             'child-style',
             get_stylesheet_directory_uri() . '/css/index.css',
-            // array('parent-style'),
+            array('parent-style'),
         );
-        // wp_enqueue_script('script-pickup', "https://code.jquery.com/jquery-1.11.0.min.js", array(), '1.11.0');
-        // wp_enqueue_script('script-pickupm', "https://code.jquery.com/jquery-migrate-1.2.1.min.js", array(), '1.2.1');
     }
-    // wp_enqueue_script('slide-js', get_stylesheet_directory_uri() . '/js/slide.js', array('slide'), '1.0.0', true);
-    wp_enqueue_script('pickup-js', get_stylesheet_directory_uri() . '/js/pickup.js', array('pickup'), '1.0.0', true);
-    // wp_enqueue_script('slider-js', get_stylesheet_directory_uri(), 'js/slider.js', array('jquery'), '1.0.0', true);
 }
 
 
@@ -129,3 +124,14 @@ function my_script()
 }
 //アクションフックの指定
 add_action('wp_enqueue_scripts', 'my_script');
+
+
+//slick
+function load_slick_scripts()
+{
+    wp_enqueue_script('jquery-script-cdn', 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js', array(), '3.6.3');
+    wp_enqueue_script('slick-script-cdn', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array(), '1.8.1');
+    wp_enqueue_script('pickup-js', get_stylesheet_directory_uri() . '/js/pickup.js');
+}
+
+add_action('wp_footer', 'load_slick_scripts');
