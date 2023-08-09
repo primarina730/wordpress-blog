@@ -32,7 +32,9 @@ get_header();
 					setup_postdata($post); // 記事データの取得
 				?>
 					<li>
-						<p class="latest-columns-time-tags"><?php the_time(get_option('date_format')); ?>&emsp;#<?php the_tags(""); ?></p>
+						<p class="latest-columns-time-tags"><?php the_time(get_option('date_format')); ?>&emsp;
+							<?php the_tags('#')  ?>
+						</p>
 						<a href="<?php the_permalink(); ?>" class="to-columns"><?php the_title(); ?></a>
 					</li>
 				<?php
