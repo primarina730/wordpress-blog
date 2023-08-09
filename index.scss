@@ -250,9 +250,15 @@ html {
         }
       }
     }
+    .slick-prev {
+      left: -10%;
+      &::before {
+        font-size: 40px;
+      }
+    }
 
-    .slick-prev,
     .slick-next {
+      right: -10%;
       &::before {
         font-size: 40px;
       }
