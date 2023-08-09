@@ -223,16 +223,13 @@ html {
     padding-top: 10%;
   }
   .slideshow {
-    width: 60vh;
+    width: 80vh;
     margin: 0 auto;
     .slick-list {
-      // &.draggable {
-      //   height: 50vh;
-      // }
       .slick-track {
-        height: 50vh !important;
+        height: 65vh !important;
         .slick-slide {
-          height: 50vh;
+          height: 65vh;
           padding: 1%;
           .pickup-thumbnail {
             display: block;
@@ -244,13 +241,20 @@ html {
               .attachment-post-thumbnail {
                 height: 100% !important;
                 width: auto !important;
-                // padding: 5%;
-                // border: 0.4rem solid $color-yellow;
-                // margin: 0 auto;
+                padding: 5%;
+                border: 0.4rem solid $color-yellow;
+                margin: 0 auto;
               }
             }
           }
         }
+      }
+    }
+
+    .slick-prev,
+    .slick-next {
+      &::before {
+        font-size: 40px;
       }
     }
     .slick-dots {
