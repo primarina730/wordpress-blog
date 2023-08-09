@@ -14,11 +14,8 @@
 get_header();
 ?>
 
-
 <div class="top-screen">
 </div>
-
-
 <div class="second-screen">
 
 	<!-- 第二画面左部分 -->

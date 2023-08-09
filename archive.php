@@ -40,12 +40,12 @@ get_header();
 							<div class="blog-item__content">
 								<?php // タイトルを表示させる start 
 								?>
-								<h3 class="blog-item__title"><?php the_title(); ?></h3>
+								<h3 class="blog-item__title"><?php echo text_restriction(get_the_title(), 20, '...'); ?></h3>
 								<?php // タイトルを表示させる end 
 								?>
 								<?php // 抜粋を表示させる start 
 								?>
-								<p class="blog-item__read"><?php the_excerpt(); ?></p>
+								<p class="blog-item__read"><?php echo text_restriction(get_the_content(), 30, '...'); ?></p>
 								<?php // 抜粋を表示させる end 
 								?>
 							</div>

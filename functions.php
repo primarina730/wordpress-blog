@@ -2,7 +2,6 @@
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 function theme_enqueue_styles()
 {
-    wp_enqueue_script('pickup');
     wp_enqueue_style('header', get_stylesheet_directory_uri() . '/css/header.css');
     wp_enqueue_style('global', get_stylesheet_directory_uri() . '/css/global.css');
 
@@ -15,15 +14,13 @@ function theme_enqueue_styles()
     } else if (is_single()) {
         wp_enqueue_style('single', get_stylesheet_directory_uri() . '/css/single.css');
     } else {
-        wp_enqueue_style('parent-style', get_template_directory_uri() . '/css/index.css');
+        wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
         wp_enqueue_style(
             'child-style',
-            get_stylesheet_directory_uri() . '/css/index.css',
-            array('parent-style'),
+            get_stylesheet_directory_uri() . '/css/index.css'
         );
     }
 }
-
 
 
 function post_has_archive($args, $post_type)
@@ -56,11 +53,24 @@ add_filter('get_the_archive_title', function ($title) {
     return $title;
 });
 
-function custom_excerpt_length($length)
+// function custom_excerpt_length($length)
+// {
+//     return 20;
+// }
+// add_filter('excerpt_length', 'custom_excerpt_length', 999);
+
+function text_restriction($text, $count, $change)
 {
-    return 20;
+    //取得したテキストのショートコードやhtmlを削除
+    $get_txt = strip_tags(strip_shortcodes($text));
+    //文字が指定数を超えているか判別
+    if (mb_strlen($get_txt, 'UTF-8') > $count) {
+        $rtxt = mb_substr($get_txt, 0, $count, 'UTF-8') . $change;
+        return $rtxt;
+    } else {
+        return $get_txt;
+    }
 }
-add_filter('excerpt_length', 'custom_excerpt_length', 999);
 
 function Change_menulabel()
 {
@@ -127,6 +137,13 @@ add_action('wp_enqueue_scripts', 'my_script');
 
 
 //slick
+// function load_slick_styles()
+// {
+//     wp_enqueue_style('slick-style-theme-cdn', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css');
+//     wp_enqueue_style('slick-style-theme-cdn', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css');
+// }
+// add_action('wp_header', 'load_slick_styles');
+
 function load_slick_scripts()
 {
     wp_enqueue_script('jquery-script-cdn', 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js', array(), '3.6.3');
