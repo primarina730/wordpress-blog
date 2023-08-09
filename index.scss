@@ -238,6 +238,9 @@ html {
         }
       }
     }
+    .slick-dots {
+      display: none !important;
+    }
   }
 }
 
@@ -245,9 +248,15 @@ html {
   padding-top: 5%;
   width: 100%;
   .monthly-list {
-    width: 80%;
+    width: 60%;
     display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
+    gap: 3%;
+
+    .each-month-archive {
+      white-space: nowrap;
+    }
   }
 }
 

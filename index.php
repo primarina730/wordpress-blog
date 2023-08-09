@@ -79,7 +79,7 @@ get_header();
 ?>
 <div class="top-archive">
 	<ul class="monthly-list">
-		<?php wp_get_archives('post_type=post&type=monthly&show_post_count=1'); ?>
+		<?php wp_get_archives(array('format' => 'custom', 'before' => '<li class=each-month-archive>', 'after' => '</li>', 'show_post_count' => true)); ?>
 	</ul>
 </div>
 <?php get_footer(); ?>
