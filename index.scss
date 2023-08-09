@@ -227,16 +227,16 @@ html {
     padding-top: 10%;
   }
   .slideshow {
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
     .slick-list {
+      &draggable {
+        display: none;
+      }
       .slick-track {
         .slick-slide {
-          padding: 1%;
-          display: flex;
-          .post-info {
-            width: 40%;
-            height: 100px;
+          padding: 0.5%;
+          .pickup-thumbnail {
           }
         }
       }

@@ -2,7 +2,6 @@
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 function theme_enqueue_styles()
 {
-    wp_enqueue_script('pickup');
     wp_enqueue_style('header', get_stylesheet_directory_uri() . '/css/header.css');
     wp_enqueue_style('global', get_stylesheet_directory_uri() . '/css/global.css');
 
@@ -54,11 +53,24 @@ add_filter('get_the_archive_title', function ($title) {
     return $title;
 });
 
-function custom_excerpt_length($length)
+// function custom_excerpt_length($length)
+// {
+//     return 20;
+// }
+// add_filter('excerpt_length', 'custom_excerpt_length', 999);
+
+function text_restriction($text, $count, $change)
 {
-    return 20;
+    //取得したテキストのショートコードやhtmlを削除
+    $get_txt = strip_tags(strip_shortcodes($text));
+    //文字が指定数を超えているか判別
+    if (mb_strlen($get_txt, 'UTF-8') > $count) {
+        $rtxt = mb_substr($get_txt, 0, $count, 'UTF-8') . $change;
+        return $rtxt;
+    } else {
+        return $get_txt;
+    }
 }
-add_filter('excerpt_length', 'custom_excerpt_length', 999);
 
 function Change_menulabel()
 {
@@ -140,5 +152,3 @@ function load_slick_scripts()
 }
 
 add_action('wp_footer', 'load_slick_scripts');
-
-// function load_pickupjs_css()
