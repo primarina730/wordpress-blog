@@ -242,10 +242,21 @@ html {
 }
 
 .top-archive {
-  // padding-top: 5%;
+  padding-top: 5%;
   width: 100%;
   .monthly-list {
     width: 80%;
     display: flex;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .top-archive {
+    .monthly-list {
+      text-align: center;
+      padding-top: 10%;
+      display: block;
+    }
   }
 }
