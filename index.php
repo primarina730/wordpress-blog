@@ -73,11 +73,6 @@ get_header();
 			}
 			?>
 		</div>
-		<div class="top-archive">
-			<ul class="monthly-list">
-				<?php wp_get_archives('post_type=post&type=monthly&show_post_count=1'); ?>
-			</ul>
-		</div>
 		<div class="mobile-search">
 			<?php get_search_form(); ?>
 		</div>
@@ -85,4 +80,9 @@ get_header();
 </div>
 <?php get_template_part('pickup'); //ピックアップ記事 
 ?>
+<div class="top-archive">
+	<ul class="monthly-list">
+		<?php wp_get_archives('post_type=post&type=monthly&show_post_count=1'); ?>
+	</ul>
+</div>
 <?php get_footer(); ?>
