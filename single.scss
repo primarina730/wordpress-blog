@@ -2,12 +2,6 @@ $background-green: #002f37;
 $color-green: #005f6f;
 $color-yellow: #ecc100;
 
-img {
-  padding-top: 5%;
-  padding-bottom: 5%;
-  width: 600px !important;
-}
-
 .single-page {
   background-color: $background-green;
   text-align: center;
@@ -19,6 +13,11 @@ img {
     &.single-title {
       width: 70%;
     }
+  }
+  img {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 100%;
   }
 
   .columns-sentence {

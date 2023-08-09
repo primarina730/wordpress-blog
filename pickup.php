@@ -10,12 +10,12 @@ if ($pickupPosts) : ?>
 
         <h2 class="top-headline">Pick Up</h2>
         <div class="slideshow">
-            <?php for ($i = 0; $i <= 4; $i++) { ?>
+            <?php for ($i = 0; $i <= 1; $i++) { ?>
                 <div id="slide<?php echo $i ?>">
                     <?php $post = $pickupPosts[$i];
                     setup_postdata($post) ?>
                     <figure class="pickup-thumbnail">
-                        <a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('l-size'); ?></a>
+                        <a href="<?php the_permalink(); ?>" class="pickup-link"><?php the_post_thumbnail(); ?></a>
                     </figure>
                 </div>
             <?php } ?>

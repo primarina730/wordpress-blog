@@ -223,17 +223,32 @@ html {
     padding-top: 10%;
   }
   .slideshow {
-    width: 50%;
+    width: 60vh;
     margin: 0 auto;
     .slick-list {
-      &draggable {
-        display: none;
-      }
+      // &.draggable {
+      //   height: 50vh;
+      // }
       .slick-track {
+        height: 50vh !important;
         .slick-slide {
-          padding: 0.5%;
+          height: 50vh;
+          padding: 1%;
           .pickup-thumbnail {
-            width: 100%;
+            display: block;
+            height: 100%;
+            margin: auto 0;
+            .pickup-link {
+              display: block;
+              height: 100%;
+              .attachment-post-thumbnail {
+                height: 100% !important;
+                width: auto !important;
+                // padding: 5%;
+                // border: 0.4rem solid $color-yellow;
+                // margin: 0 auto;
+              }
+            }
           }
         }
       }
@@ -245,10 +260,10 @@ html {
 }
 
 .top-archive {
-  padding-top: 5%;
+  padding-top: 50%;
   width: 100%;
   .monthly-list {
-    width: 60%;
+    width: fit-content;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
