@@ -227,7 +227,7 @@ html {
     margin: 0 auto;
     .slick-list {
       .slick-track {
-        height: 65vh !important;
+        height: 65vh;
         .slick-slide {
           height: 65vh;
           padding: 1%;
@@ -238,9 +238,11 @@ html {
             .pickup-link {
               display: block;
               height: 100%;
+              width: auto;
               .attachment-post-thumbnail {
                 height: 100% !important;
                 width: auto !important;
+                max-width: 100% !important;
                 padding: 5%;
                 border: 0.4rem solid $color-yellow;
                 margin: 0 auto;
@@ -286,6 +288,59 @@ html {
 }
 
 @media screen and (max-width: 768px) {
+  .pickup-part {
+    width: 100%;
+    .top-headline {
+      padding-top: 10%;
+    }
+    .slideshow {
+      width: 60vh;
+      margin: 0 auto;
+      .slick-list {
+        .slick-track {
+          height: 40vh !important;
+          .slick-slide {
+            height: 40vh;
+            padding: 1%;
+            .pickup-thumbnail {
+              display: block;
+              height: 100%;
+              margin: auto 0;
+              .pickup-link {
+                display: block;
+                height: 100%;
+                .attachment-post-thumbnail {
+                  height: 100% !important;
+                  width: auto !important;
+                  max-width: 100% !important;
+                  padding: 5%;
+                  border: 0.2rem solid $color-yellow;
+                  margin: 0 auto;
+                }
+              }
+            }
+          }
+        }
+      }
+      .slick-prev {
+        left: -30px;
+        &::before {
+          font-size: 40px;
+        }
+      }
+
+      .slick-next {
+        right: -30px;
+        &::before {
+          font-size: 40px;
+        }
+      }
+      .slick-dots {
+        display: none !important;
+      }
+    }
+  }
+
   .top-archive {
     .monthly-list {
       text-align: center;
