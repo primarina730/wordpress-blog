@@ -10,7 +10,7 @@ if ($pickupPosts) : ?>
 
         <h2 class="top-headline">Pick Up</h2>
         <div class="slideshow">
-            <?php for ($i = 0; $i <= 1; $i++) { ?>
+            <?php for ($i = 0; $i <= 4; $i++) { ?>
                 <div id="slide<?php echo $i ?>">
                     <?php $post = $pickupPosts[$i];
                     setup_postdata($post) ?>
