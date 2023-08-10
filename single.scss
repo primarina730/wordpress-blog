@@ -29,15 +29,17 @@ $color-yellow: #ecc100;
 .columns-sentence {
   width: 70%;
   margin: 0 auto;
-}
-
-.wp-block-liquid-speech-balloon {
-  padding-bottom: 3%;
-  margin-left: 0 !important;
-  .liquid-speech-balloon-text {
-    width: 70%;
-    p {
-      color: black;
+  .wp-block-liquid-speech-balloon {
+    padding-bottom: 3%;
+    margin-left: 0 !important;
+    &.liquid-speech-balloon-wrap {
+      margin-bottom: 0rem !important;
+    }
+    .liquid-speech-balloon-text {
+      width: 70%;
+      p {
+        color: black;
+      }
     }
   }
 }
@@ -58,8 +60,8 @@ $color-yellow: #ecc100;
 
       .wp-block-liquid-speech-balloon {
         padding-bottom: 7%;
-        &.liquid-speech-balloon-wrap {
-          margin-bottom: 0rem;
+        .liquid-speech-balloon-wrap {
+          margin-bottom: 0rem !important;
         }
         .liquid-speech-balloon-avatar {
           width: 10vh;

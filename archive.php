@@ -28,26 +28,21 @@ get_header();
 				<article class="blog-list__list-item">
 					<div class="item">
 						<a href="<?php the_permalink(); ?>" class="blog-item">
-							<?php // アイキャッチを表示させる start 
-							?>
+
 							<div class="blog-item__thumbnail">
 								<?php if (has_post_thumbnail()) : ?>
 									<?php echo get_the_post_thumbnail($post->ID, 'l-size'); ?>
 								<?php endif; ?>
 							</div>
-							<?php // アイキャッチを表示させる end 
-							?>
+
 							<div class="blog-item__content">
-								<?php // タイトルを表示させる start 
-								?>
-								<h3 class="blog-item__title"><?php echo text_restriction(get_the_title(), 20, '...'); ?></h3>
-								<?php // タイトルを表示させる end 
-								?>
-								<?php // 抜粋を表示させる start 
-								?>
-								<p class="blog-item__read"><?php echo text_restriction(get_the_content(), 30, '...'); ?></p>
-								<?php // 抜粋を表示させる end 
-								?>
+
+								<!-- <h3 class="blog-item__title">?php echo text_restriction(get_the_title(), 20, '...'); ?></h3> -->
+								<h3 class="blog-item__title"><?php echo get_the_title() ?></h3>
+
+								<!-- <p class="blog-item__read">?php echo text_restriction(get_the_content(), 30, '...'); ?></p> -->
+								<!-- <p class="blog-item__read">?php echo get_the_content() ?></p> -->
+
 							</div>
 						</a>
 					</div>

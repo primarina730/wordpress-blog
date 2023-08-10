@@ -64,6 +64,9 @@ html {
         }
         .to-columns {
           font-size: 1rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
         }
       }
     }
