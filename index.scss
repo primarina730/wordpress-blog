@@ -138,6 +138,7 @@ html {
 
 .pickup-part {
   width: 100%;
+  margin: 0 auto;
   .top-headline {
     padding-top: 10%;
   }
@@ -194,7 +195,7 @@ html {
   padding-top: 5%;
   width: 100%;
   .monthly-list {
-    width: fit-content;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -236,7 +237,7 @@ html {
         ul {
           width: 100%;
           li {
-            padding: 0.5rem;
+            padding: 1rem;
             .latest-columns-time-tags {
               font-weight: bold;
             }
@@ -246,6 +247,7 @@ html {
           }
         }
         .viewmore-button-a {
+          padding-top: 10%;
           font-size: 1rem;
         }
       }
@@ -288,6 +290,7 @@ html {
 
   .pickup-part {
     width: 100%;
+    margin: 0 auto;
     .top-headline {
       padding-top: 10%;
     }
@@ -344,6 +347,7 @@ html {
       text-align: center;
       padding-top: 5%;
       display: block;
+      line-height: 1.5rem;
     }
   }
 }
