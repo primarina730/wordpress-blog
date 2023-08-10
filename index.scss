@@ -136,6 +136,76 @@ html {
   display: none;
 }
 
+.pickup-part {
+  width: 100%;
+  .top-headline {
+    padding-top: 10%;
+  }
+  .slideshow {
+    width: 90vh;
+    margin: 0 auto;
+    .slick-list {
+      .slick-track {
+        height: 65vh;
+        .slick-slide {
+          height: 65vh;
+          padding: 1%;
+          .pickup-thumbnail {
+            display: block;
+            height: 100%;
+            margin: auto 0;
+            .pickup-link {
+              display: block;
+              height: 100%;
+              width: auto;
+              .attachment-post-thumbnail {
+                height: 100% !important;
+                width: auto !important;
+                max-width: 100% !important;
+                padding: 5%;
+                border: 0.4rem solid $color-yellow;
+                margin: 0 auto;
+              }
+            }
+          }
+        }
+      }
+    }
+    .slick-prev {
+      left: -10vh;
+      &::before {
+        font-size: 40px;
+      }
+    }
+
+    .slick-next {
+      right: -10vh;
+      &::before {
+        font-size: 40px;
+      }
+    }
+    .slick-dots {
+      display: none !important;
+    }
+  }
+}
+
+.top-archive {
+  padding-top: 5%;
+  width: 100%;
+  .monthly-list {
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 3%;
+
+    .each-month-archive {
+      white-space: nowrap;
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   html {
     line-height: 1 !important;
@@ -215,79 +285,7 @@ html {
   .pc-search {
     display: none;
   }
-}
 
-.pickup-part {
-  width: 100%;
-  .top-headline {
-    padding-top: 10%;
-  }
-  .slideshow {
-    width: 90vh;
-    margin: 0 auto;
-    .slick-list {
-      .slick-track {
-        height: 65vh;
-        .slick-slide {
-          height: 65vh;
-          padding: 1%;
-          .pickup-thumbnail {
-            display: block;
-            height: 100%;
-            margin: auto 0;
-            .pickup-link {
-              display: block;
-              height: 100%;
-              width: auto;
-              .attachment-post-thumbnail {
-                height: 100% !important;
-                width: auto !important;
-                max-width: 100% !important;
-                padding: 5%;
-                border: 0.4rem solid $color-yellow;
-                margin: 0 auto;
-              }
-            }
-          }
-        }
-      }
-    }
-    .slick-prev {
-      left: -10vh;
-      &::before {
-        font-size: 40px;
-      }
-    }
-
-    .slick-next {
-      right: -10vh;
-      &::before {
-        font-size: 40px;
-      }
-    }
-    .slick-dots {
-      display: none !important;
-    }
-  }
-}
-
-.top-archive {
-  padding-top: 5%;
-  width: 100%;
-  .monthly-list {
-    width: fit-content;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    gap: 3%;
-
-    .each-month-archive {
-      white-space: nowrap;
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
   .pickup-part {
     width: 100%;
     .top-headline {
