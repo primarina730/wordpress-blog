@@ -223,7 +223,7 @@ html {
     padding-top: 10%;
   }
   .slideshow {
-    width: 80vh;
+    width: 90vh;
     margin: 0 auto;
     .slick-list {
       .slick-track {
@@ -253,14 +253,14 @@ html {
       }
     }
     .slick-prev {
-      left: -10%;
+      left: -10vh;
       &::before {
         font-size: 40px;
       }
     }
 
     .slick-next {
-      right: -10%;
+      right: -10vh;
       &::before {
         font-size: 40px;
       }
@@ -272,7 +272,7 @@ html {
 }
 
 .top-archive {
-  padding-top: 50%;
+  padding-top: 5%;
   width: 100%;
   .monthly-list {
     width: fit-content;
@@ -294,13 +294,13 @@ html {
       padding-top: 10%;
     }
     .slideshow {
-      width: 60vh;
+      width: 40vh;
       margin: 0 auto;
       .slick-list {
         .slick-track {
-          height: 40vh !important;
+          height: 25vh !important;
           .slick-slide {
-            height: 40vh;
+            height: 25vh;
             padding: 1%;
             .pickup-thumbnail {
               display: block;
@@ -323,16 +323,16 @@ html {
         }
       }
       .slick-prev {
-        left: -30px;
+        left: -5vh;
         &::before {
-          font-size: 40px;
+          font-size: 25px;
         }
       }
 
       .slick-next {
-        right: -30px;
+        right: -5vh;
         &::before {
-          font-size: 40px;
+          font-size: 25px;
         }
       }
       .slick-dots {
@@ -344,7 +344,7 @@ html {
   .top-archive {
     .monthly-list {
       text-align: center;
-      padding-top: 10%;
+      padding-top: 5%;
       display: block;
     }
   }
