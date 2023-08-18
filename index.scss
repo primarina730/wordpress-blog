@@ -101,9 +101,11 @@ $color-yellow: #ecc100;
 .search-form {
   display: flex;
 
-  .search-field,
+  .search-field {
+    border-color: gray;
+  }
   .search-submit {
-    border: white solid 2px !important;
+    border: gray solid 2px !important;
   }
   .search-field:active,
   .search-field:hover,
@@ -177,16 +179,26 @@ $color-yellow: #ecc100;
       }
     }
     .slick-prev {
-      left: -10vh;
+      left: -5%;
+      width: 3%;
+      height: 60vh;
+      background-color: aquamarine;
+      z-index: 100;
+      background-color: $background-green !important;
       &::before {
-        font-size: 40px;
+        font-size: 25px;
       }
     }
 
     .slick-next {
-      right: -10vh;
+      right: -5%;
+      width: 3%;
+      height: 60vh;
+      background-color: aquamarine;
+      z-index: 100;
+      background-color: $background-green !important;
       &::before {
-        font-size: 40px;
+        font-size: 25px;
       }
     }
     .slick-dots {
@@ -195,18 +207,24 @@ $color-yellow: #ecc100;
   }
 }
 
-.top-archive {
-  padding-top: 5%;
+.top-archive-part {
   width: 100%;
-  .monthly-list {
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
+  .archive-monthly {
+    width: fit-content;
     margin: 0 auto;
-    gap: 3%;
-
-    .each-month-archive {
-      white-space: nowrap;
+    .top-headline {
+      padding-top: 5vh;
+    }
+    .archive-dropdown-part {
+      width: fit-content;
+      margin: 0 auto;
+      .archive-dropdown-select {
+        border-color: gray;
+        padding: 2% !important;
+        &:focus {
+          border-color: $color-yellow;
+        }
+      }
     }
   }
 }
@@ -328,14 +346,21 @@ $color-yellow: #ecc100;
         }
       }
       .slick-prev {
-        left: -5vh;
+        left: -1vh;
+        width: 5vh;
+        height: 30vh;
+        background-color: aquamarine;
+        z-index: 100;
         &::before {
           font-size: 25px;
         }
       }
 
       .slick-next {
-        right: -5vh;
+        right: -1vh;
+        width: 5vh;
+        height: 30vh;
+        background-color: aquamarine;
         &::before {
           font-size: 25px;
         }
@@ -343,15 +368,6 @@ $color-yellow: #ecc100;
       .slick-dots {
         display: none !important;
       }
-    }
-  }
-
-  .top-archive {
-    .monthly-list {
-      text-align: center;
-      padding-top: 5%;
-      display: block;
-      line-height: 1.5rem;
     }
   }
 }

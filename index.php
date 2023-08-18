@@ -11,6 +11,9 @@
  * @subpackage Twenty_Twenty_One
  * @since Twenty Twenty-One 1.0
  */
+
+use function PHPSTORM_META\type;
+
 get_header();
 ?>
 
@@ -72,18 +75,27 @@ get_header();
 			}
 			?>
 		</div>
+		<div class="top-archive-part">
+			<div class="archive-monthly">
+				<h2 class="top-headline">
+					Archive
+				</h2>
+				<div class="archive-dropdown-part">
+					<select class="archive-dropdown-select" onChange='document.location.href=this.options[this.selectedIndex].value;'>
+						<option value=""><?php echo (__('Select Month')); ?></option>
+						<?php wp_get_archives('type=monthly&format=option&show_post_count=1'); ?>
+					</select>
+				</div>
+			</div>
+		</div>
 		<div class="mobile-search">
-			<?php get_search_form(); ?>
 		</div>
 	</div>
 </div>
+
 <?php get_template_part('pickup'); //ピックアップ記事 
 ?>
-<div class="top-archive">
-	<?php wp_get_archives(array('format' => 'custom', 'before' => '<li class=each-month-archive>', 'after' => '</li>', 'show_post_count' => true)); ?>
-	<select name="archive-dropdown" onchange="document.location.href=this.options[this.selectedIndex].value;">
-		<option disabled selected value>アーカイブ</option>
-		<?php wp_get_archives(array('format' => 'custom', 'before' => '<option class=each-month-archive>', 'after' => '</option>', 'show_post_count' => true)); ?>
-	</select>
-</div>
+<?php get_search_form(); ?>
+
+
 <?php get_footer(); ?>
