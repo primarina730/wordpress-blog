@@ -80,11 +80,10 @@ get_header();
 <?php get_template_part('pickup'); //ピックアップ記事 
 ?>
 <div class="top-archive">
-	<ul class="monthly-list">
-		< <?php wp_get_archives(array('format' => 'custom', 'before' => '<li class=each-month-archive>', 'after' => '</li>', 'show_post_count' => true)); ?> </ul>
-			<!-- 
-				<select name="archive-dropdown" onchange="document.location.href=this.options[this.selectedIndex].value;">
-					<option disabled selected value>アーカイブ</option>
-				</select> -->
+	<?php wp_get_archives(array('format' => 'custom', 'before' => '<li class=each-month-archive>', 'after' => '</li>', 'show_post_count' => true)); ?>
+	<select name="archive-dropdown" onchange="document.location.href=this.options[this.selectedIndex].value;">
+		<option disabled selected value>アーカイブ</option>
+		<?php wp_get_archives(array('format' => 'custom', 'before' => '<option class=each-month-archive>', 'after' => '</option>', 'show_post_count' => true)); ?>
+	</select>
 </div>
 <?php get_footer(); ?>
