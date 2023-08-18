@@ -51,6 +51,16 @@ get_header();
 		<div class="pc-search">
 			<?php get_search_form(); ?>
 		</div>
+		<div class="top-archive-mobile">
+			<div class="top-archive-part">
+				<div class="archive-dropdown-part">
+					<select class="archive-dropdown-select" onChange='document.location.href=this.options[this.selectedIndex].value;'>
+						<option value="">Archive</option>
+						<?php wp_get_archives('type=monthly&format=option&show_post_count=1'); ?>
+					</select>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<!-- 第二画面右部分 -->
@@ -75,27 +85,24 @@ get_header();
 			}
 			?>
 		</div>
-		<div class="top-archive-part">
-			<div class="archive-monthly">
-				<h2 class="top-headline">
-					Archive
-				</h2>
+		<div class="top-archive-pc">
+			<div class="top-archive-part">
 				<div class="archive-dropdown-part">
 					<select class="archive-dropdown-select" onChange='document.location.href=this.options[this.selectedIndex].value;'>
-						<option value=""><?php echo (__('Select Month')); ?></option>
+						<option value="">Archive</option>
 						<?php wp_get_archives('type=monthly&format=option&show_post_count=1'); ?>
 					</select>
 				</div>
 			</div>
 		</div>
 		<div class="mobile-search">
+
+			<?php get_search_form(); ?>
 		</div>
 	</div>
 </div>
 
 <?php get_template_part('pickup'); //ピックアップ記事 
 ?>
-<?php get_search_form(); ?>
-
 
 <?php get_footer(); ?>

@@ -207,18 +207,22 @@ $color-yellow: #ecc100;
   }
 }
 
-.top-archive-part {
+.top-archive-mobile {
+  display: none;
+}
+
+.top-archive-pc,
+.top-archive-mobile {
   width: 100%;
-  .archive-monthly {
+  padding-bottom: 5%;
+  .top-archive-part {
     width: fit-content;
     margin: 0 auto;
-    .top-headline {
-      padding-top: 5vh;
-    }
     .archive-dropdown-part {
       width: fit-content;
       margin: 0 auto;
       .archive-dropdown-select {
+        text-align: center;
         border-color: gray;
         padding: 2% !important;
         &:focus {
@@ -369,5 +373,13 @@ $color-yellow: #ecc100;
         display: none !important;
       }
     }
+  }
+
+  .top-archive-mobile {
+    display: block;
+  }
+
+  .top-archive-pc {
+    display: none;
   }
 }
