@@ -17,7 +17,7 @@ $color-yellow: #ecc100;
   img {
     padding-top: 5%;
     padding-bottom: 5%;
-    width: 60% !important;
+    width: 40% !important;
     display: block;
     margin: 0 auto;
   }
@@ -59,15 +59,16 @@ $color-yellow: #ecc100;
     .first-headline {
       font-size: 1rem;
     }
+    img {
+      width: 60% !important;
+    }
 
     .single-details {
       font-size: 2px;
     }
     .columns-sentence {
-      font-size: 0.6rem;
-      &.columns-balloon {
-        width: 80%;
-      }
+      width: 80%;
+      margin: 0 auto;
       img {
         width: 70% !important;
       }
@@ -89,9 +90,9 @@ $color-yellow: #ecc100;
           }
         }
       }
-      .single-details {
-        width: 80%;
-      }
+    }
+    .single-details {
+      width: 80%;
     }
   }
 }

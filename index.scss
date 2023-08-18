@@ -308,6 +308,9 @@ $color-yellow: #ecc100;
   }
   .mobile-search {
     display: block;
+    .search-form {
+      max-width: 80% !important;
+    }
   }
 
   .pc-search {

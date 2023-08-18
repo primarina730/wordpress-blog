@@ -18,6 +18,13 @@ body {
   .category-nav {
     .categories {
       padding-left: 0 !important;
+      .cat-item {
+        a {
+          &:hover {
+            color: $color-yellow !important;
+          }
+        }
+      }
     }
   }
   .repeatHeadlines {
@@ -25,14 +32,26 @@ body {
     padding-top: 5%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding-left: 10%;
-    padding-right: 10%;
-    gap: 3%;
+    padding-left: 15%;
+    padding-right: 15%;
+    gap: 5%;
   }
 
   .blog-item__thumbnail {
     padding: 0;
-    border: rgba($color: $color-yellow, $alpha: 0.5) solid 0.2rem;
+    border: rgba($color: $color-yellow, $alpha: 0.9) solid 0.2rem;
+    cursor: pointer;
+    overflow: hidden;
+    img {
+      height: auto;
+      transition: transform 0.6s ease;
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
   }
 
   .blog-item__title,

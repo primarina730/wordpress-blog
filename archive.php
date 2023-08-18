@@ -20,6 +20,40 @@ get_header();
 	wp_list_categories('title_li=');
 	echo '</ul></div>'; ?>
 
+
+	<!-- テスト -->
+	<?php
+	$http = is_ssl() ? 'https' : 'http' . '://';
+	$url = $http . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
+	// echo $url;
+	?>
+
+
+	<div class="category-nav">
+		aaaaa
+		<ul class="categories">
+			<?php
+			$categories = get_categories();
+			$category1 = $categories[0]->name;
+
+			$category_size = count($categories);
+			echo $category_size;
+
+			for ($i = 0; $i <= $category_size - 1; $i++) {
+				$category = $categories[$i]->name;
+				if (mb_strpos($url, $category) !== false) {
+					echo '<li class="cat-item"><a class="at-same" href=" ' . get_category_link($categories[$i]->term_id) . '">' . $category . '</a></li>';
+				} else {
+					echo '<li class="cat-item"><a class="" href=" ' . get_category_link($categories[$i]->term_id) . '">' . $category . '</a></li>';
+				}
+			}
+			?>
+
+		</ul>
+	</div>
+
+
+
 	<div class="repeatHeadlines">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<?php if ($description) : ?>
