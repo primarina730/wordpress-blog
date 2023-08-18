@@ -40,11 +40,11 @@ get_header();
 			echo $category_size;
 
 			for ($i = 0; $i <= $category_size - 1; $i++) {
-				$category = $categories[$i]->name;
-				if (mb_strpos($url, $category) !== false) {
+				$category = lcfirst($categories[$i]->name);
+				if (strstr($url, $category) !== false) {
 					echo '<li class="cat-item"><a class="at-same" href=" ' . get_category_link($categories[$i]->term_id) . '">' . $category . '</a></li>';
 				} else {
-					echo '<li class="cat-item"><a class="" href=" ' . get_category_link($categories[$i]->term_id) . '">' . $category . '</a></li>';
+					echo '<li class="cat-item"><a class="testest" href=" ' . get_category_link($categories[$i]->term_id) . '">' . $category . '</a></li>';
 				}
 			}
 			?>
