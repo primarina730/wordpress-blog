@@ -81,7 +81,10 @@ get_header();
 ?>
 <div class="top-archive">
 	<ul class="monthly-list">
-		<?php wp_get_archives(array('format' => 'custom', 'before' => '<li class=each-month-archive>', 'after' => '</li>', 'show_post_count' => true)); ?>
-	</ul>
+		< <?php wp_get_archives(array('format' => 'custom', 'before' => '<li class=each-month-archive>', 'after' => '</li>', 'show_post_count' => true)); ?> </ul>
+			<!-- 
+				<select name="archive-dropdown" onchange="document.location.href=this.options[this.selectedIndex].value;">
+					<option disabled selected value>アーカイブ</option>
+				</select> -->
 </div>
 <?php get_footer(); ?>

@@ -4,41 +4,51 @@ $color-yellow: #ecc100;
 
 .single-page {
   background-color: $background-green;
-  text-align: center;
   width: 100%;
 
   .first-headline {
+    width: 70%;
+    text-align: center;
     font-size: 2rem;
-    margin: 0 auto;
     &.single-title {
-      width: 70%;
+      margin: 0 auto;
     }
   }
   img {
     padding-top: 5%;
     padding-bottom: 5%;
     width: 60% !important;
+    display: block;
     margin: 0 auto;
   }
 
   .columns-sentence {
     font-size: 1rem;
-  }
-}
+    width: 60%;
+    margin: 0 auto;
 
-.columns-sentence {
-  width: 70%;
-  margin: 0 auto;
-  .wp-block-liquid-speech-balloon {
-    padding-bottom: 3%;
-    margin-left: 0 !important;
-    &.liquid-speech-balloon-wrap {
-      margin-bottom: 0rem !important;
+    .wp-block-liquid-speech-balloon {
+      padding-bottom: 3%;
+      margin-left: 0 !important;
+      &.liquid-speech-balloon-wrap {
+        margin-bottom: 0rem !important;
+        .liquid-speech-balloon-text {
+          width: 70%;
+          p {
+            color: black;
+          }
+        }
+      }
     }
-    .liquid-speech-balloon-text {
-      width: 70%;
-      p {
-        color: black;
+  }
+  .single-details {
+    font-size: 0.6rem;
+    width: 60%;
+    margin: 0 auto;
+    .single-category {
+      display: flex;
+      li {
+        display: inline;
       }
     }
   }
@@ -48,16 +58,19 @@ $color-yellow: #ecc100;
   .single-page {
     .first-headline {
       font-size: 1rem;
-      width: 80%;
     }
-    img {
-      width: 60% !important;
-      margin: 0 auto !important;
+
+    .single-details {
+      font-size: 2px;
     }
     .columns-sentence {
-      font-size: 0.8rem;
-      margin: 0 auto;
-
+      font-size: 0.6rem;
+      &.columns-balloon {
+        width: 80%;
+      }
+      img {
+        width: 70% !important;
+      }
       .wp-block-liquid-speech-balloon {
         padding-bottom: 7%;
         .liquid-speech-balloon-wrap {
@@ -70,10 +83,14 @@ $color-yellow: #ecc100;
         }
         .liquid-speech-balloon-text {
           width: 100%;
+          padding: 10px 20px;
           p {
             color: black;
           }
         }
+      }
+      .single-details {
+        width: 80%;
       }
     }
   }

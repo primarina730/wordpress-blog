@@ -2,9 +2,9 @@ $background-green: #002f37;
 $color-green: #005f6f;
 $color-yellow: #ecc100;
 
-html {
-  cursor: url(../images/padfoot1.cur), default;
-}
+// html {
+//   cursor: url(../images/padfoot1.cur), default;
+// }
 
 .container {
   padding-top: 0 !important;
@@ -123,6 +123,7 @@ html {
 }
 
 .right-side {
+  width: 30%;
   .about-me {
     .introduce-sentence {
       font-size: 1rem;
