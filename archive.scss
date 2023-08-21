@@ -14,13 +14,20 @@ body {
   background-color: $background-green !important;
   text-align: center;
   width: 100%;
-  padding-bottom: 7vh;
   .category-nav {
     .categories {
       padding-left: 0 !important;
       .cat-item {
+        text-transform: capitalize;
         a {
           &:hover {
+            color: $color-yellow !important;
+          }
+        }
+        &.current-cat {
+          & a[aria-current="page"] {
+            text-decoration: underline;
+            text-decoration-color: $color-green;
             color: $color-yellow !important;
           }
         }
@@ -107,5 +114,17 @@ body {
         }
       }
     }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1020px) {
+  .container {
+    padding-bottom: 15vh !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-bottom: 20vh !important;
   }
 }

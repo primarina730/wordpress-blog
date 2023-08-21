@@ -222,6 +222,7 @@ $color-yellow: #ecc100;
       width: fit-content;
       margin: 0 auto;
       .archive-dropdown-select {
+        display: block;
         text-align: center;
         border-color: gray;
         padding: 2% !important;
@@ -242,6 +243,11 @@ $color-yellow: #ecc100;
     .nav-menu {
       line-height: 1.7;
     }
+  }
+
+  .top-screen {
+    background-image: url("../images/bassethound.jpg");
+    background-position: 25% 50%;
   }
 
   .about-me-image {
@@ -269,6 +275,7 @@ $color-yellow: #ecc100;
             }
             .to-columns {
               font-size: 0.8rem;
+              white-space: normal;
             }
           }
         }
@@ -295,9 +302,10 @@ $color-yellow: #ecc100;
   }
 
   .search-form {
-    flex-wrap: nowrap;
+    flex-wrap: nowrap !important;
     padding-top: 5%;
     padding-bottom: 5%;
+    max-width: 75% !important;
     input[type="search"] {
       padding: 0;
     }
@@ -309,7 +317,9 @@ $color-yellow: #ecc100;
   .mobile-search {
     display: block;
     .search-form {
-      max-width: 80% !important;
+      .search-field {
+        margin-right: 0 !important;
+      }
     }
   }
 
@@ -385,4 +395,7 @@ $color-yellow: #ecc100;
   .top-archive-pc {
     display: none;
   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1020px) {
 }
