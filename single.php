@@ -21,7 +21,7 @@ get_header();
 		the_post_thumbnail();
 	?>
 
-		<div class="columns-sentence columns-balloon">
+		<div class="columns-sentence">
 
 			<?php
 			the_content();

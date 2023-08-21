@@ -58,10 +58,8 @@ a {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1020px) {
-  .first-headline {
-    font-size: 1.5rem;
-  }
   .container {
-    padding-bottom: 30vh !important;
+    padding-top: 10vh;
+    padding-bottom: 30vh;
   }
 }

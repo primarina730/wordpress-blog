@@ -18,6 +18,9 @@ article {
 
 .page-header {
   border-color: $color-yellow !important;
+  .page-title {
+    font-size: 3rem;
+  }
 }
 
 .search-form {
