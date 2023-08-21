@@ -55,6 +55,9 @@ $color-yellow: #ecc100;
 }
 
 @media screen and (max-width: 768px) {
+  .container {
+    padding-top: 15vh;
+  }
   .single-page {
     .first-headline {
       font-size: 1rem;
@@ -99,11 +102,9 @@ $color-yellow: #ecc100;
 }
 
 @media (min-width: 768px) and (max-width: 1020px) {
-  .single-page {
-    .columns-sentence {
-      p {
-        font-size: 0.8rem;
-      }
+  .columns-sentence {
+    p {
+      font-size: 0.8rem;
     }
   }
 }

@@ -2,10 +2,6 @@ $background-green: #002f37;
 $color-green: #005f6f;
 $color-yellow: #ecc100;
 
-img {
-  width: 600px !important;
-}
-
 article {
   max-width: 80% !important;
   border-bottom: 3px solid $color-yellow !important;
@@ -19,7 +15,7 @@ article {
 .page-header {
   border-color: $color-yellow !important;
   .page-title {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 
@@ -28,7 +24,7 @@ article {
 
   .search-field,
   .search-submit {
-    border: white solid 2px !important;
+    border: gray solid 2px !important;
   }
   .search-field:active,
   .search-field:hover,
@@ -51,6 +47,7 @@ article {
   margin-bottom: 0 !important;
   .entry-title {
     font-size: 2rem;
+    text-align: center;
   }
 }
 
@@ -61,12 +58,21 @@ article {
 }
 
 .post-thumbnail {
-  .wp-post-image {
-    margin-top: 0 !important;
+  width: 100%;
+  .post-thumbnail-inner {
+    width: 60% !important;
+    .wp-post-image {
+      width: 60% !important;
+      margin-top: 0 !important;
+    }
   }
 }
 
 @media screen and (max-width: 768px) {
+  .container {
+    padding-top: 20vh;
+  }
+
   img {
     width: 60% !important;
   }
@@ -103,6 +109,26 @@ article {
   .entry-content {
     font-size: 0.9rem;
   }
+  .entry-footer {
+    font-size: 0.7rem !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1020px) {
+  article {
+    width: 100%;
+  }
+
+  .entry-header {
+    .entry-title {
+      font-size: 1.5rem;
+    }
+  }
+
+  .entry-content {
+    font-size: 1rem;
+  }
+
   .entry-footer {
     font-size: 0.7rem !important;
   }

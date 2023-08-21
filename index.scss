@@ -2,10 +2,6 @@ $background-green: #002f37;
 $color-green: #005f6f;
 $color-yellow: #ecc100;
 
-// html {
-//   cursor: url(../images/padfoot1.cur), default;
-// }
-
 .container {
   padding-top: 0 !important;
 }
@@ -246,7 +242,6 @@ $color-yellow: #ecc100;
   }
 
   .top-screen {
-    background-image: url("../images/bassethound.jpg");
     background-position: 25% 50%;
   }
 
@@ -288,12 +283,12 @@ $color-yellow: #ecc100;
     .right-side {
       width: 100%;
       .about-me {
-        width: 80%;
+        width: 75%;
         margin: 0 auto;
         margin-bottom: 10%;
       }
       .tags {
-        width: 80%;
+        width: 75%;
         margin: 0 auto;
         margin-bottom: 10%;
         line-height: 1.7;
@@ -398,6 +393,10 @@ $color-yellow: #ecc100;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1020px) {
+  .top-screen {
+    background-position: 40% 50%;
+  }
+
   .top-headline {
     font-size: 1.5rem;
   }
