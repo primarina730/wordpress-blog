@@ -398,4 +398,76 @@ $color-yellow: #ecc100;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1020px) {
+  .top-headline {
+    font-size: 1.5rem;
+  }
+
+  .right-side {
+    .about-me {
+      .introduce-sentence {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .pickup-part {
+    width: 100%;
+    margin: 0 auto;
+    .top-headline {
+      padding-top: 10%;
+    }
+    .slideshow {
+      width: 40vh;
+      margin: 0 auto;
+      .slick-list {
+        .slick-track {
+          height: 25vh !important;
+          .slick-slide {
+            height: 25vh;
+            padding: 1%;
+            .pickup-thumbnail {
+              display: block;
+              height: 100%;
+              margin: auto 0;
+              .pickup-link {
+                display: block;
+                height: 100%;
+                .attachment-post-thumbnail {
+                  height: 100% !important;
+                  width: auto !important;
+                  max-width: 100% !important;
+                  padding: 5%;
+                  border: 0.2rem solid $color-yellow;
+                  margin: 0 auto;
+                }
+              }
+            }
+          }
+        }
+      }
+      .slick-prev {
+        left: -1vh;
+        width: 5vh;
+        height: 30vh;
+        background-color: aquamarine;
+        z-index: 100;
+        &::before {
+          font-size: 25px;
+        }
+      }
+
+      .slick-next {
+        right: -1vh;
+        width: 5vh;
+        height: 30vh;
+        background-color: aquamarine;
+        &::before {
+          font-size: 25px;
+        }
+      }
+      .slick-dots {
+        display: none !important;
+      }
+    }
+  }
 }
