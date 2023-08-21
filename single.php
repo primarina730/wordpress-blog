@@ -21,22 +21,23 @@ get_header();
 		the_post_thumbnail();
 	?>
 
-		<div class="columns-sentence">
+		<div class="columns-sentence-surround">
+			<div class="columns-sentence-part">
 
-			<?php
-			the_content();
-			?>
+				<?php
+				the_content();
+				?>
 
-		</div>
-		<div class="single-details">
-			<div class="single-date"><?php the_date() ?>&emsp;</div>
-			<div class="single-category">
-				<div>カテゴリー：</div><?php the_category() ?>&emsp;
+
+				<div class="single-details">
+					<div class="single-date"><?php the_date() ?>&emsp;</div>
+					<div class="single-category">
+						<div>カテゴリー：</div><?php the_category() ?>&emsp;
+					</div>
+					<div class="single-tags"><?php the_tags(); ?></div>
+				</div>
 			</div>
-			<div class="single-tags"><?php the_tags(); ?></div>
 		</div>
-
-
 	<?php
 
 	// If comments are open or there is at least one comment, load up the comment template.

@@ -21,11 +21,17 @@ $color-yellow: #ecc100;
     display: block;
     margin: 0 auto;
   }
-
-  .columns-sentence {
-    font-size: 1rem;
+  .columns-sentence-surround {
     width: 60%;
     margin: 0 auto;
+    .columns-sentence-part {
+      font-size: 1rem;
+      width: fit-content;
+      margin: 0 auto;
+      p {
+        width: fit-content;
+      }
+    }
 
     .wp-block-liquid-speech-balloon {
       padding-bottom: 3%;
@@ -43,13 +49,8 @@ $color-yellow: #ecc100;
   }
   .single-details {
     font-size: 0.6rem;
-    width: 60%;
-    margin: 0 auto;
     .single-category {
       display: flex;
-      li {
-        display: inline;
-      }
     }
   }
 }
