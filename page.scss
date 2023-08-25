@@ -58,12 +58,17 @@ img {
   -moz-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
   -ms-transition-duration: 0.3s;
+  justify-content: center;
 
   &:hover {
     color: black;
     background-color: $color-yellow;
     border: 1px solid $color-yellow;
   }
+}
+
+.wpcf7-spinner {
+  display: none;
 }
 
 .page-page {
