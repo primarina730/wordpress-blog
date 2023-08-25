@@ -38,6 +38,7 @@ get_header();
 				</div>
 			</div>
 		</div>
+
 	<?php
 
 	// If comments are open or there is at least one comment, load up the comment template.
