@@ -31,8 +31,7 @@
 </main>
 <footer>
     <div class="em-copyright">
-        <p>
-            &copy;2023&nbsp;Kano&nbsp;Haruna
+        <p> <small>&copy;2023&nbsp;Kano&nbsp;Haruna</small>
         </p>
     </div>
 </footer>
