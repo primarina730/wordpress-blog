@@ -38,6 +38,10 @@ img {
   border: 2px solid $color-yellow;
 }
 
+textarea.wpcf7-form-control.wpcf7-textarea {
+  color: black;
+}
+
 #submit {
   display: inline-block;
   padding: 0.6em 2em;
@@ -87,6 +91,10 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+  .page-page {
+    width: 70%;
+  }
+
   #name,
   #email,
   #title,
