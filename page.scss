@@ -21,15 +21,10 @@ img {
   -webkit-appearance: none;
 }
 
-.contact_information {
-  padding-top: 1%;
-}
-
 #name,
 #email,
 #title,
 #message {
-  width: 60%;
   padding: 3px 7px;
   border-radius: 5px;
   border: 2px solid #ccc;
@@ -72,10 +67,15 @@ img {
 }
 
 .page-page {
-  padding-left: 15%;
-  padding-right: 15%;
+  margin: 0 auto;
+  width: fit-content;
   background-color: $background-green !important;
   text-align: center;
+
+  .contact_information {
+    text-align: left;
+    padding-top: 5%;
+  }
 
   p {
     font-size: 1rem !important;
@@ -123,4 +123,22 @@ img {
 
 .wp-block-image {
   margin: 0 !important;
+}
+
+.contact-must {
+  color: black;
+  margin-right: 10px;
+  padding: 6px 10px;
+  background: #ecc100; /* 背景色 */
+  border-radius: 5px;
+}
+
+/* 入力項目を見やすくする */
+input.wpcf7-form-control.wpcf7-text,
+textarea.wpcf7-form-control.wpcf7-textarea {
+  width: 100%;
+  padding: 8px 15px;
+  margin-right: 10px;
+  margin-top: 5px;
+  border-radius: 3px;
 }
