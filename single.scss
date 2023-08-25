@@ -24,6 +24,7 @@ $color-yellow: #ecc100;
   .columns-sentence-surround {
     width: 60%;
     margin: 0 auto;
+    padding-bottom: 2%;
     .columns-sentence-part {
       font-size: 1rem;
       width: fit-content;
@@ -68,30 +69,26 @@ $color-yellow: #ecc100;
     }
 
     .single-details {
-      font-size: 1rem;
+      font-size: 0.7rem;
     }
-    .columns-sentence {
-      font-size: 0.6rem;
+    .columns-sentence-surround {
       width: 80%;
-      margin: 0 auto;
-      img {
-        width: 70% !important;
-      }
-      .wp-block-liquid-speech-balloon {
-        padding-bottom: 7%;
-        .liquid-speech-balloon-wrap {
-          margin-bottom: 0rem !important;
+
+      .columns-sentence {
+        font-size: 0.6rem;
+        img {
+          width: 70% !important;
         }
-        .liquid-speech-balloon-avatar {
-          width: 10vh;
-          height: 10vh;
-          background-size: cover;
-        }
-        .liquid-speech-balloon-text {
-          width: 100%;
-          padding: 10px 20px;
-          p {
-            color: black;
+        .wp-block-liquid-speech-balloon {
+          padding-bottom: 7%;
+          .liquid-speech-balloon-avatar {
+            width: 10vh;
+            height: 10vh;
+            background-size: cover;
+          }
+          .liquid-speech-balloon-text {
+            width: 100%;
+            padding: 10px 20px;
           }
         }
       }

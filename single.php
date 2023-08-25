@@ -17,7 +17,7 @@ get_header();
 	/* Start the Loop */
 	while (have_posts()) :
 		the_post();
-		the_title('<div class="first-headline single-title">', '</div>');
+		the_title('<h2 class="first-headline single-title">', '</h2>');
 		the_post_thumbnail();
 	?>
 
@@ -49,3 +49,4 @@ get_header();
 	endwhile; // End of the loop.
 	?>
 </div>
+<?php get_footer() ?>

@@ -28,7 +28,16 @@
     }
 </style>
 </div>
-<?php wp_footer(); ?>
+</main>
+<footer>
+    <div class="em-copyright">
+        <p>
+            &copy;2023&nbsp;Kano&nbsp;Haruna
+        </p>
+    </div>
+</footer>
 </body>
+
+<?php wp_footer(); ?>
 
 </html>

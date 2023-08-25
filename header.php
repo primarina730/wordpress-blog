@@ -38,20 +38,23 @@
 </head>
 
 <body>
-	<div class="titleAndNavigator">
-		<div>
-			<h2><a href=<?php echo home_url('/'); ?> class="blogTitle">Inside&nbsp;<br class="sp_br">Emma's&nbsp;<br class="sp_br">Case</a></h2>
+	<header>
+		<div class="titleAndNavigator">
+			<div>
+				<h2><a href=<?php echo home_url('/'); ?> class="blogTitle">Inside&nbsp;<br class="sp_br">Emma's&nbsp;<br class="sp_br">Case</a></h2>
+			</div>
+			<div>
+				<ul class="nav-menu">
+					<li><a href=<?php echo (get_post_type_archive_link("post") . "/blog") ?> class="ap_navigation">All Columns</a></li>
+					<?php $toAboutMe = get_page_by_path('about-me');
+					$post_id_a = $toAboutMe->ID; ?>
+					<li><a href=<?php echo (get_permalink($post_id_a)) ?> class="ap_navigation">About Me</a></li>
+					<?php $toContact = get_page_by_path('contact');
+					$post_id_c = $toContact->ID; ?>
+					<li><a href=<?php echo (get_permalink($post_id_c)) ?> class="ap_navigation">Contact</a></li>
+				</ul>
+			</div>
 		</div>
-		<div>
-			<ul class="nav-menu">
-				<li><a href=<?php echo (get_post_type_archive_link("post") . "/blog") ?> class="ap_navigation">All Columns</a></li>
-				<?php $toAboutMe = get_page_by_path('about-me');
-				$post_id_a = $toAboutMe->ID; ?>
-				<li><a href=<?php echo (get_permalink($post_id_a)) ?> class="ap_navigation">About Me</a></li>
-				<?php $toContact = get_page_by_path('contact');
-				$post_id_c = $toContact->ID; ?>
-				<li><a href=<?php echo (get_permalink($post_id_c)) ?> class="ap_navigation">Contact</a></li>
-			</ul>
-		</div>
-	</div>
-	<div class="container">
+	</header>
+	<main>
+		<div class="container">
