@@ -2,18 +2,20 @@ $background-green: #002f37;
 $color-green: #005f6f;
 $color-yellow: #ecc100;
 
-.blogTitle {
-  color: $color-yellow !important;
-}
-
 .titleAndNavigator {
   z-index: 10;
-  padding: 3%;
+  padding: 2%;
   display: flex;
   justify-content: space-between;
   position: fixed;
   width: 100%;
   top: 0px;
+  h1 {
+    font-size: 3.5rem;
+  }
+  .blogTitle {
+    color: $color-yellow !important;
+  }
 }
 
 .ap_navigation {
@@ -51,14 +53,20 @@ $color-yellow: #ecc100;
   }
 
   .titleAndNavigator {
+    h1 {
+      font-size: 2rem;
+    }
     h2 {
       font-size: 1.5rem;
     }
-    .nav-menu {
-      font-size: 0.8rem;
-      .ap_navigation {
-        &::after {
-          transition: all 0.1s ease 0s;
+    nav {
+      .nav-menu {
+        line-height: 1.5;
+        .ap_navigation {
+          font-size: 1rem;
+          &::after {
+            transition: all 0.1s ease 0s;
+          }
         }
       }
     }
@@ -67,12 +75,17 @@ $color-yellow: #ecc100;
 
 @media screen and (min-width: 768px) and (max-width: 1020px) {
   .titleAndNavigator {
+    h1 {
+      font-size: 3rem;
+    }
     h2 {
       font-size: 1.5rem;
     }
-  }
 
-  .nav-menu {
-    font-size: 0.8rem;
+    nav {
+      .nav-menu {
+        font-size: 1rem;
+      }
+    }
   }
 }
