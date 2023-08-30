@@ -21,6 +21,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+	<?php wp_head(); ?>
 	<style>
 		html {
 			padding-top: 0 !important;
@@ -34,7 +35,6 @@
 			}
 		}
 	</style>
-	<?php wp_head(); ?>
 </head>
 
 <body>

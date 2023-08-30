@@ -52,10 +52,11 @@ $color-yellow: #ecc100;
           color: white;
           font-size: 0.5rem;
         }
-        .to-columns {
+        h3 {
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap;
+          font-size: 1rem;
         }
       }
     }
@@ -261,7 +262,7 @@ $color-yellow: #ecc100;
             .latest-columns-time-tags {
               font-weight: bold;
             }
-            .to-columns {
+            h3 {
               font-size: 0.8rem;
               white-space: normal;
             }
