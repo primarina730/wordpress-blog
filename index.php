@@ -66,7 +66,7 @@ get_header();
 	<!-- 第二画面右部分 -->
 	<div class="right-side">
 		<div class="about-me frame">
-			<h3 class="top-headline">About Me</h3>
+			<h2 class="top-headline">About Me</h2>
 			<?php // スラッグからIDを取得して表示
 			$page = get_page_by_path("about-me");
 			$page_id = $page->ID; ?>
@@ -75,7 +75,7 @@ get_header();
 			<p class="introduce-sentence">31アイスでもチョコミントアイスを選ぶぐらいチョコミントアイスが好き</p>
 		</div>
 		<div class="tags frame">
-			<h3 class="top-headline">Tags</h3>
+			<h2 class="top-headline">Tags</h2>
 			<?php
 			$posttags = get_tags();
 			if ($posttags) {
