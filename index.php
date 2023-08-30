@@ -34,11 +34,21 @@ get_header();
 				foreach ($posts as $post) : // ループの開始
 					setup_postdata($post); // 記事データの取得
 				?>
+
 					<li>
-						<p class="latest-columns-time-tags"><?php the_time(get_option('date_format')); ?>&emsp;
-							<?php the_tags('#')  ?>
-						</p>
-						<a href="<?php the_permalink(); ?>" class="to-columns"><?php the_title(); ?></a>
+						<a href="<?php the_permalink(); ?>" class="to-columns">
+							<p class="latest-columns-time-tags"><?php the_time(get_option('date_format')); ?>&emsp;
+								<?php
+								$posttags = get_the_tags();
+								if ($posttags) {
+									foreach ($posttags as $tag) {
+										echo '#' . $tag->name . '&nbsp;';
+									}
+								}
+								?>
+							</p>
+							<h3><?php the_title(); ?></h3>
+						</a>
 					</li>
 				<?php
 				endforeach; // ループの終了
