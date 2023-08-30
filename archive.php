@@ -12,7 +12,10 @@
 
 get_header();
 ?>
-
+<div class="each-breadcrumbs-area">
+	<?php get_template_part('breadcrumbs'); //ピックアップ記事 
+	?>
+</div>
 <div class="archive-page">
 	<?php the_archive_title('<h2 class="first-headline">', '</h2>'); ?>
 	<?php

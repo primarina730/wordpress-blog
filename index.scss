@@ -22,7 +22,7 @@ $color-yellow: #ecc100;
   display: flex;
   justify-content: center;
   background-color: $background-green;
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
   padding-top: 20vh;
 }
@@ -36,14 +36,12 @@ $color-yellow: #ecc100;
 }
 
 .left-side {
-  padding-right: 10%;
-  width: 100%;
-  margin: 0 auto;
+  padding-right: 5%;
   .latest-columns {
     margin-bottom: 10%;
     width: 100%;
     ul {
-      width: 100%;
+      width: 60vh;
       li {
         padding: 1em;
         border-bottom: 1px solid $color-green;
@@ -115,7 +113,7 @@ $color-yellow: #ecc100;
 }
 
 .right-side {
-  width: 30%;
+  width: 20%;
   .about-me {
     .introduce-sentence {
       font-size: 1rem;
