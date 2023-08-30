@@ -24,7 +24,7 @@ get_header();
 	<!-- 第二画面左部分 -->
 	<div class="left-side">
 		<div class="latest-columns">
-			<h2 class="top-headline first-headline">Latest Columns</h2>
+			<h2 class="first-headline">Latest Columns</h2>
 			<ul>
 				<?php
 				$args = array(
