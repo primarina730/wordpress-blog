@@ -15,7 +15,7 @@ if ($pickupPosts) : ?>
                     <?php $post = $pickupPosts[$i];
                     setup_postdata($post) ?>
                     <figure class="pickup-thumbnail">
-                        <a href="<?php the_permalink(); ?>" class="pickup-link"><?php the_post_thumbnail(); ?></br>
+                        <a href="<?php the_permalink(); ?>" class="pickup-link"><?php the_post_thumbnail(); ?>
                             <p class="pickup-title"><?php the_title() ?></p>
                         </a>
                     </figure>

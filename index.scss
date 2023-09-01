@@ -151,10 +151,12 @@ $color-yellow: #ecc100;
         .slick-slide {
           height: 58vh;
           padding: 1%;
+
           .pickup-thumbnail {
             display: block;
             height: 100%;
             margin: auto 0;
+
             .pickup-link {
               display: block;
               height: 100%;
@@ -343,9 +345,9 @@ $color-yellow: #ecc100;
                 display: block;
                 height: 100%;
                 .attachment-post-thumbnail {
-                  height: 100% !important;
-                  width: auto !important;
-                  max-width: 100% !important;
+                  height: 100%;
+                  max-width: 100%;
+                  margin: 0 auto;
                   padding: 5%;
                   border: 0.2rem solid $color-yellow;
                   margin: 0 auto;
