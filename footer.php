@@ -14,19 +14,7 @@
 
 ?>
 
-<style>
-    html {
-        padding-bottom: 0 !important;
-        margin-bottom: 0 !important;
-    }
 
-    @media screen and (max-width:782px) {
-        html {
-            padding-bottom: 0 !important;
-            margin-bottom: 0 !important;
-        }
-    }
-</style>
 </div>
 </main>
 <footer>
@@ -36,7 +24,6 @@
     </div>
 </footer>
 </body>
-
 <?php wp_footer(); ?>
 
 </html>
