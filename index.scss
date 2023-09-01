@@ -113,7 +113,8 @@ $color-yellow: #ecc100;
 }
 
 .right-side {
-  width: 20%;
+  width: 100%;
+  padding-left: 20%;
   .about-me {
     .introduce-sentence {
       font-size: 1rem;
@@ -172,8 +173,8 @@ $color-yellow: #ecc100;
             }
           }
           .pickup-title {
-            width: fit-content;
-            margin: 0 auto;
+            width: 100%;
+            text-align: center;
           }
         }
       }
@@ -279,7 +280,7 @@ $color-yellow: #ecc100;
       }
     }
     .right-side {
-      width: 100%;
+      padding-left: 0;
       .about-me {
         width: 75%;
         margin: 0 auto;
@@ -336,6 +337,8 @@ $color-yellow: #ecc100;
           .slick-slide {
             height: 25vh;
             padding: 1%;
+            width: 100%;
+            margin: 0 auto;
             .pickup-thumbnail {
               display: block;
               height: 100%;
@@ -344,13 +347,18 @@ $color-yellow: #ecc100;
               .pickup-link {
                 display: block;
                 height: 100%;
+                margin: 0 auto;
                 .attachment-post-thumbnail {
-                  height: 100%;
-                  max-width: 100%;
+                  // height: 100% !important;
+                  // width: auto !important;
+                  // max-width: 100%;
                   margin: 0 auto;
-                  padding: 5%;
+                  // padding: 5%;
                   border: 0.2rem solid $color-yellow;
-                  margin: 0 auto;
+                  text-align: center;
+                }
+                .pickup-title {
+                  font-size: 0.8rem;
                 }
               }
             }
@@ -402,6 +410,7 @@ $color-yellow: #ecc100;
   }
 
   .right-side {
+    padding-left: 0;
     .about-me {
       .introduce-sentence {
         font-size: 0.8rem;
