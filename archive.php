@@ -13,8 +13,15 @@
 get_header();
 ?>
 <div class="archive-page">
-	<?php the_archive_title('<h2 class="first-headline">', '</h2>'); ?>
 	<?php
+	$http = is_ssl() ? 'https' : 'http' . '://';
+	$url = $http . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
+
+	if (false !== strstr($url, 'tag')) {
+		echo the_archive_title('<h2 class="first-headline">＃', '</h2>');
+	} else {
+		echo the_archive_title('<h2 class="first-headline">', '</h2>');
+	}
 	echo '<div class="category-nav"><ul class="categories">';
 	wp_list_categories('title_li=');
 	echo '</ul></div>'; ?>
