@@ -34,7 +34,7 @@
                 }
                 if (false === strstr($url, 'blog') && false !== strstr($url, 'tag')) {
                     echo '<p class="breadcrumbs-arrow">＞</p>';
-                    echo the_archive_title('<p class="breadcrumbs-signpost"><a href ="./"', '</a></p>');
+                    echo the_archive_title('<p class="breadcrumbs-signpost"><a href ="./"></a>＃', '</a></p>');
                 }
             } else if (is_single()) {
                 echo '<p class="breadcrumbs-arrow">＞</p>';
