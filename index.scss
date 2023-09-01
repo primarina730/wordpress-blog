@@ -22,7 +22,7 @@ $color-yellow: #ecc100;
   display: flex;
   justify-content: center;
   background-color: $background-green;
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
   padding-top: 20vh;
 }
@@ -410,7 +410,6 @@ $color-yellow: #ecc100;
   }
 
   .right-side {
-    padding-left: 0;
     .about-me {
       .introduce-sentence {
         font-size: 0.8rem;
