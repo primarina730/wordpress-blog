@@ -34,16 +34,16 @@
                 }
                 if (false === strstr($url, 'blog') && false !== strstr($url, 'tag')) {
                     echo '<p class="breadcrumbs-arrow">＞</p>';
-                    echo the_archive_title('<p class="breadcrumbs-signpost"><a href ="' . $url . '">#', '</a></p>');
+                    echo the_archive_title('<p class="breadcrumbs-signpost"><a href ="./"', '</a></p>');
                 }
             } else if (is_single()) {
                 echo '<p class="breadcrumbs-arrow">＞</p>';
                 echo  the_category();
                 echo '<p class="breadcrumbs-arrow">＞</p>';
-                echo the_title('<p class="breadcrumbs-signpost"><a href ="." >', '</a></p>');
+                echo the_title('<p class="breadcrumbs-signpost"><a href ="./" >', '</a></p>');
             } else if (is_page()) {
                 echo '<p class="breadcrumbs-arrow">＞</p>';
-                echo '<a href =".">';
+                echo '<a href ="./">';
                 echo the_title('<p class="breadcrumbs-signpost">', '</p>');
                 echo '</a>';
             }
