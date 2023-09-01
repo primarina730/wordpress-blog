@@ -169,6 +169,10 @@ $color-yellow: #ecc100;
               }
             }
           }
+          .pickup-title {
+            width: fit-content;
+            margin: 0 auto;
+          }
         }
       }
     }
@@ -334,6 +338,7 @@ $color-yellow: #ecc100;
               display: block;
               height: 100%;
               margin: auto 0;
+
               .pickup-link {
                 display: block;
                 height: 100%;
