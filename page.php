@@ -13,13 +13,17 @@
 get_header();
 ?>
 
-<div class="page-page">
-    <h2 class="first-headline"><?php the_title() ?></h2>
-    <?php the_post_thumbnail('<div class="page-content">') ?>
+<section>
+    <div class="page-page">
+        <h2 class="first-headline"><?php the_title() ?></h2>
 
-    <?php
-    the_content('</div>');
-    ?>
+        <?php the_post_thumbnail('<div class="page-content">') ?>
 
-</div>
+        <?php
+        the_content('</div>');
+        ?>
+
+    </div>
+</section>
+
 <?php get_footer() ?>

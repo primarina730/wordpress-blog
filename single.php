@@ -12,41 +12,44 @@
 
 get_header();
 ?>
-<div class="single-page">
-	<?php
-	/* Start the Loop */
-	while (have_posts()) :
-		the_post();
-		the_title('<h2 class="first-headline single-title">', '</h2>');
-		the_post_thumbnail();
-	?>
+<article>
+	<div class="single-page">
+		<?php
+		/* Start the Loop */
+		while (have_posts()) :
+			the_post();
+			the_title('<h2 class="first-headline single-title">', '</h2>');
+			the_post_thumbnail();
+		?>
 
-		<div class="columns-sentence-surround">
-			<div class="columns-sentence-part">
+			<div class="columns-sentence-surround">
+				<div class="columns-sentence-part">
 
-				<?php
-				the_content();
-				?>
+					<?php
+					the_content();
+					?>
 
-
-				<div class="single-details">
-					<div class="single-date"><?php the_date() ?>&emsp;</div>
-					<div class="single-category">
-						<div>カテゴリー：</div><?php the_category() ?>&emsp;
-					</div>
-					<div class="single-tags"><?php the_tags(); ?></div>
+					<aside>
+						<div class="single-details">
+							<div class="single-date"><?php the_date() ?>&emsp;</div>
+							<div class="single-category">
+								<div>カテゴリー：</div><?php the_category() ?>&emsp;
+							</div>
+							<div class="single-tags"><?php the_tags(); ?></div>
+						</div>
+					</aside>
 				</div>
 			</div>
-		</div>
 
-	<?php
+		<?php
 
-	// If comments are open or there is at least one comment, load up the comment template.
-	// if (comments_open() || get_comments_number()) {
+		// If comments are open or there is at least one comment, load up the comment template.
+		// if (comments_open() || get_comments_number()) {
 
-	// 	comments_template('<div class="">', '</div>');
-	// }
-	endwhile; // End of the loop.
-	?>
-</div>
+		// 	comments_template('<div class="">', '</div>');
+		// }
+		endwhile; // End of the loop.
+		?>
+	</div>
+</article>
 <?php get_footer() ?>
