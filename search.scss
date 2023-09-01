@@ -85,19 +85,24 @@ article {
   }
 
   .search-form {
-    flex-wrap: nowrap;
-    input[type="field"] {
-      padding-top: 5%;
-      padding-bottom: 5%;
-    }
-
+    flex-wrap: nowrap !important;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    max-width: 75% !important;
     input[type="search"] {
       padding: 0;
     }
-
     input[type="submit"] {
       padding: 0 5%;
       font-size: 0.5rem;
+    }
+  }
+  .mobile-search {
+    display: block;
+    .search-form {
+      .search-field {
+        margin-right: 0 !important;
+      }
     }
   }
   .entry-header {

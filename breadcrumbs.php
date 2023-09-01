@@ -22,7 +22,7 @@
         <?php
         $http = is_ssl() ? 'https' : 'http' . '://';
         $url = $http . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
-        if (is_404()) {
+        if (is_404() || (is_search())) {
         } else if (!is_home()) {
             echo '<p class="breadcrumbs-signpost"><a href="' . home_url('/') . '">ホーム</a></p>';
             if (is_archive()) {

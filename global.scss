@@ -55,7 +55,7 @@ a {
 
 .breadcrumbs-container {
   padding-left: 2%;
-  white-space: nowrap;
+  line-height: 0;
   ul,
   li,
   p {
@@ -83,6 +83,7 @@ a {
   }
 
   .breadcrumbs-container {
+    padding-top: 5%;
     li,
     p {
       font-size: 0.8rem;
