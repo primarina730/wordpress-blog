@@ -87,8 +87,20 @@ get_header();
 				<h2 class="top-headline">About Me</h2>
 				<?php // スラッグからIDを取得して表示
 				$page = get_page_by_path("about-me");
-				$page_id = $page->ID; ?>
-				<?php echo '<div class="about-me-image">' . get_the_post_thumbnail($page_id, 'thumbnail') . '</div>'; ?>
+				$page_id = $page->ID;
+				$image_file = get_the_post_thumbnail_url($page_id);
+				$image_size = getimagesize($image_file);
+				$image_width = $image_size[0];
+				$image_height = $image_size[1];
+
+				if ((int)$image_height > (int)$image_width) {
+					$image_square = (int)$image_width;
+				} else {
+					$image_square = (int)$image_height;
+				}
+
+				?>
+				<?php echo '<div class="about-me-image">' . get_the_post_thumbnail($page_id, array($image_square, $image_square)) . '</div>'; ?>
 				<p class="introduce-sentence">浅く広く投稿していきます。</p>
 				<p class="introduce-sentence">31アイスでもチョコミントアイスを選ぶぐらいチョコミントアイスが好き</p>
 			</div>
