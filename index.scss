@@ -43,9 +43,18 @@ $color-yellow: #ecc100;
     ul {
       width: 60vh;
       li {
-        padding: 1em;
+        height: 4rem;
         border-bottom: 1px solid $color-green;
-
+        article {
+          height: 100%;
+          .to-columns {
+            display: flex;
+            height: 100%;
+            .ttt-container {
+              margin: auto 0;
+            }
+          }
+        }
         .latest-columns-time-tags {
           color: white;
           font-size: 0.5rem;
@@ -425,6 +434,14 @@ $color-yellow: #ecc100;
 
   .top-headline {
     font-size: 1.5rem;
+  }
+
+  .left-side {
+    .latest-columns {
+      ul {
+        width: 50vh;
+      }
+    }
   }
 
   .right-side {

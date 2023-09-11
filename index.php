@@ -38,17 +38,19 @@ get_header();
 						<li>
 							<article>
 								<a href="<?php the_permalink(); ?>" class="to-columns">
-									<p class="latest-columns-time-tags"><?php the_time(get_option('date_format')); ?>&emsp;
-										<?php
-										$posttags = get_the_tags();
-										if ($posttags) {
-											foreach ($posttags as $tag) {
-												echo '#' . $tag->name . '&nbsp;';
+									<div class="ttt-container">
+										<p class="latest-columns-time-tags"><?php the_time(get_option('date_format')); ?>&emsp;
+											<?php
+											$posttags = get_the_tags();
+											if ($posttags) {
+												foreach ($posttags as $tag) {
+													echo '#' . $tag->name . '&nbsp;';
+												}
 											}
-										}
-										?>
-									</p>
-									<h3><?php the_title(); ?></h3>
+											?>
+										</p>
+										<h3><?php the_title(); ?></h3>
+									</div>
 								</a>
 							</article>
 						</li>
