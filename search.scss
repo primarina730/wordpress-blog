@@ -3,7 +3,7 @@ $color-green: #005f6f;
 $color-yellow: #ecc100;
 
 article {
-  max-width: 80% !important;
+  max-width: 800px !important;
   border-bottom: 3px solid $color-yellow !important;
   margin: 0 auto;
   &:last-child {
@@ -13,7 +13,7 @@ article {
 }
 
 .page-header {
-  border-color: $color-yellow !important;
+  border-bottom: 3px solid $color-yellow !important;
   .page-title {
     font-size: 2rem;
   }
@@ -69,6 +69,11 @@ article {
 }
 
 @media screen and (max-width: 768px) {
+  article {
+    width: 100%;
+    max-width: 400px !important;
+  }
+
   .container {
     padding-top: 20vh;
   }
@@ -122,6 +127,7 @@ article {
 @media screen and (min-width: 768px) and (max-width: 1020px) {
   article {
     width: 100%;
+    max-width: 600px !important;
   }
 
   .entry-header {

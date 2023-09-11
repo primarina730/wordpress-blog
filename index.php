@@ -94,14 +94,16 @@ get_header();
 		<div class="tags frame">
 			<section>
 				<h2 class="top-headline">Tags</h2>
-				<?php
-				$posttags = get_tags();
-				if ($posttags) {
-					foreach ($posttags as $tag) {
-						echo '<a href="' . get_tag_link($tag->term_id) . '" class="toTags">' . "#" . $tag->name . '&emsp;' . '</a>';
+				<ul class="tags-list">
+					<?php
+					$posttags = get_tags();
+					if ($posttags) {
+						foreach ($posttags as $tag) {
+							echo '<li><a href="' . get_tag_link($tag->term_id) . '" class="toTags toTags--button">' . "#" . $tag->name . '</a></li>';
+						}
 					}
-				}
-				?>
+					?>
+				</ul>
 			</section>
 		</div>
 		<div class="top-archive-pc">

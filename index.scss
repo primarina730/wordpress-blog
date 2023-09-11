@@ -22,7 +22,7 @@ $color-yellow: #ecc100;
   display: flex;
   justify-content: center;
   background-color: $background-green;
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
   padding-top: 20vh;
 }
@@ -113,22 +113,40 @@ $color-yellow: #ecc100;
 }
 
 .right-side {
-  width: 100%;
-  padding-left: 20%;
+  padding-left: 10vh;
+  .top-headline {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+  }
+
   .about-me {
     .introduce-sentence {
       font-size: 1rem;
     }
   }
   .tags {
-    .toTags {
-      font-size: 0.7em;
+    width: 100%;
+
+    .tags-list {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      .toTags {
+        font-size: 0.7em;
+      }
+      .toTags--button {
+        background-color: gray;
+        padding: 0.3rem;
+        border-radius: 100vh;
+        border: 1px solid transparent;
+        &:hover {
+          background: black;
+          border: 1px solid gray;
+        }
+      }
     }
-  }
-  .top-headline {
-    text-align: center;
-    color: white;
-    font-size: 1.5rem;
   }
 }
 
