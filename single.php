@@ -29,15 +29,13 @@ get_header();
 					the_content();
 					?>
 
-					<aside>
-						<div class="single-details">
-							<div class="single-date"><?php the_date() ?>&emsp;</div>
-							<div class="single-category">
-								<div>カテゴリー：</div><?php the_category() ?>&emsp;
-							</div>
-							<div class="single-tags"><?php the_tags(); ?></div>
+					<div class="single-details">
+						<div class="single-date"><?php the_date() ?>&emsp;</div>
+						<div class="single-category">
+							<p>カテゴリー：</p><?php the_category() ?>&emsp;
 						</div>
-					</aside>
+						<div class="single-tags"><?php the_tags(); ?></div>
+					</div>
 				</div>
 			</div>
 

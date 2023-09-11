@@ -11,14 +11,14 @@
 	 */
 	get_header();
 	?>
-	<section>
+	<article>
 		<div class="search-page">
 			<?php
 			if (have_posts()) {
 			?>
 
 				<header class="page-header alignwide">
-					<h3 class="first-headline">
+					<h1 class="first-headline">
 						<?php
 						printf(
 							/* translators: %s: Search term. */
@@ -26,7 +26,7 @@
 							'<span class="page-description search-term">' . esc_html(get_search_query()) . '</span>'
 						);
 						?>
-					</h3>
+					</h1>
 				</header><!-- .page-header -->
 
 				<div class="search-result-count default-max-width">
@@ -46,16 +46,19 @@
 					?>
 				</div><!-- .search-result-count -->
 				<?php get_search_form() ?>
-			<?php
+				<?php
 				// Start the Loop.
 				while (have_posts()) {
 					the_post();
-
 					/*
-		 * Include the Post-Format-specific template for the content.
-		 * If you want to override this in a child theme, then include a file
-		 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-		 */
+					* Include the Post-Format-specific template for the content.
+					* If you want to override this in a child theme, then include a file
+					* called content-___.php (where ___ is the Post Format name) and that will be used instead.
+					*/ ?>
+
+
+					<article>
+				<?php
 					get_template_part('template-parts/content/content-excerpt', get_post_format());
 				} // End the loop.
 
@@ -66,7 +69,8 @@
 			} else {
 				get_template_part('template-parts/content/content-none');
 			}
-			?>
+				?>
+					</article>
 		</div>
-	</section>
+	</article>
 	<?php get_footer() ?>
