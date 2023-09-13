@@ -34,7 +34,6 @@ use LDAP\ResultEntry;
             echo '<p class="breadcrumbs-signpost"><a href="' . home_url('/blog') . '">記事一覧</a></p>';
             if (is_category()) {
                 echo '<p class="breadcrumbs-arrow">＞</p>';
-                // echo  the_category()；
                 foreach ($categories as $category) {
                     $category_name = strtolower($category->name);
                     if (false !== strstr($url, $category_name)) {
