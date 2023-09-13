@@ -68,6 +68,8 @@ use LDAP\ResultEntry;
                     $category_name = strtolower($category->name);
                     if (false !== strstr($before_url, $category_name)) {
                         echo '<p class="breadcrumbs-arrow">＞</p>';
+                        echo '<p class="breadcrumbs-signpost"><a href="' . home_url('/blog') . '">記事一覧</a></p>';
+                        echo '<p class="breadcrumbs-arrow">＞</p>';
                         echo '<a href="' . get_category_link($category->term_id) . '"><p class="breadcrumbs-signpost">' . $category->name . '</p>';
                     }
                 }
