@@ -39,7 +39,7 @@ get_header();
 							<article>
 								<a href="<?php the_permalink(); ?>" class="to-columns">
 									<div class="ttt-container">
-										<p class="latest-columns-time-tags"><?php the_time(get_option('date_format')); ?>&emsp;
+										<p class="latest-columns-time-tags"><time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time(get_option('date_format')); ?></time>&emsp;
 											<?php
 											$posttags = get_the_tags();
 											if ($posttags) {

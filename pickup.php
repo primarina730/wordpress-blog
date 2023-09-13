@@ -15,11 +15,14 @@ if ($pickupPosts) : ?>
                         <div id="slide<?php echo $i ?>">
                             <?php $post = $pickupPosts[$i];
                             setup_postdata($post) ?>
-                            <figure class="pickup-thumbnail">
-                                <a href="<?php the_permalink(); ?>" class="pickup-link"><?php the_post_thumbnail(); ?>
+                            <div class="pickup-container">
+                                <a href="<?php the_permalink(); ?>" class="pickup-link">
+                                    <figure class="pickup-thumbnail">
+                                        <?php the_post_thumbnail(); ?>
+                                    </figure>
                                     <h3 class="pickup-title"><?php the_title() ?></h3>
                                 </a>
-                            </figure>
+                            </div>
                         </div>
                     <?php } ?>
                 </div>

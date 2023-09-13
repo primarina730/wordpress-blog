@@ -12,7 +12,7 @@
 
 get_header();
 ?>
-<article>
+<section>
     <div class="page-page">
         <h2 class="first-headline"><?php the_title() ?></h2>
 
@@ -23,6 +23,6 @@ get_header();
         ?>
 
     </div>
-</article>
+</section>
 
 <?php get_footer() ?>

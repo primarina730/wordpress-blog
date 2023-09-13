@@ -155,7 +155,7 @@ function add_ogp_metas()
         // ページの説明文（トップページでは以下で指定すればその値を）
         $ogp_description = '';
         // デフォルト画像の URL （アイキャッチ画像がない場合に使用）
-        $ogp_image = 'デフォルト画像のURL';
+        $ogp_image = '';
         // サイト名（以下で指定すればその値を、空の場合は  get_bloginfo('name') の値）
         $ogp_site_name = '';
         // サイトの言語（以下で指定すればその値を、空の場合は get_locale() の値）
