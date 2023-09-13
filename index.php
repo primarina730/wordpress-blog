@@ -92,15 +92,13 @@ get_header();
 				$image_size = getimagesize($image_file);
 				$image_width = $image_size[0];
 				$image_height = $image_size[1];
-
-				if ((int)$image_height > (int)$image_width) {
-					$image_square = (int)$image_width;
-				} else {
-					$image_square = (int)$image_height;
+				if ($image_height > $image_width) {
+					$image_square = $image_width;
+				} else if ($image_height < $image_width) {
+					$image_square = $image_height;
 				}
-
 				?>
-				<?php echo '<div class="about-me-image">' . get_the_post_thumbnail($page_id, array($image_square, $image_square)) . '</div>'; ?>
+				<?php echo '<div class="about-me-image">' . get_the_post_thumbnail($page_id, array(300, 300)) . '</div>'; ?>
 				<p class="introduce-sentence">浅く広く投稿していきます。</p>
 				<p class="introduce-sentence">31アイスでもチョコミントアイスを選ぶぐらいチョコミントアイスが好き</p>
 			</div>

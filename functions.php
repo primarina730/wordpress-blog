@@ -88,8 +88,9 @@ add_action('admin_menu', 'Change_menulabel');
 // アイキャッチ
 add_theme_support('post-thumbnails');
 add_image_size('l-size', 300, 200, array('left', 'top'));
-add_image_size('top-pickup', 300, 300, true);
-add_image_size('top-aboutme', 499, 499, true);
+add_image_size('top-aboutme', $image_square, $image_square, array('left', 'top'));
+
+
 
 /*---- Google Web Fonts ----*/
 function add_google_fonts()

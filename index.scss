@@ -22,9 +22,9 @@ $color-yellow: #ecc100;
   display: flex;
   justify-content: center;
   background-color: $background-green;
-  width: 60%;
   margin: 0 auto;
   padding-top: 20vh;
+  width: 75%;
 }
 
 .frame {
@@ -34,46 +34,46 @@ $color-yellow: #ecc100;
   border: solid 3px $color-green;
   margin-bottom: 2em;
 }
-
-.left-side {
-  padding-right: 5%;
-  .latest-columns {
-    margin-bottom: 10%;
-    width: 100%;
-    ul {
-      width: 60vh;
-      li {
-        height: 4rem;
-        border-bottom: 1px solid $color-green;
-        article {
-          height: 100%;
-          .to-columns {
-            display: flex;
+.second-screen {
+  .left-side {
+    padding-right: 10%;
+    width: 200px;
+    flex-grow: 3;
+    .latest-columns {
+      margin-bottom: 10%;
+      width: 100%;
+      ul {
+        li {
+          height: 4rem;
+          border-bottom: 1px solid $color-green;
+          article {
             height: 100%;
-            .ttt-container {
-              margin: auto 0;
+            .to-columns {
+              display: flex;
+              height: 100%;
+              .ttt-container {
+                margin: auto 0;
+              }
             }
           }
-        }
-        .latest-columns-time-tags {
-          color: white;
-          font-size: 0.5rem;
-        }
-        h3 {
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-          font-size: 1rem;
+          .latest-columns-time-tags {
+            color: white;
+            font-size: 0.5rem;
+          }
+          h3 {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 1rem;
+          }
         }
       }
-    }
-    .viewmore-button-a {
-      padding-top: 5%;
-      text-align: center;
+      .viewmore-button-a {
+        padding-top: 5%;
+        text-align: center;
+      }
     }
   }
 }
-
 .hover-button {
   display: inline-block;
   padding: 0.6em 2em;
@@ -121,45 +121,51 @@ $color-yellow: #ecc100;
   }
 }
 
-.right-side {
-  padding-left: 10vh;
-  .top-headline {
-    text-align: center;
-    color: white;
-    font-size: 1.5rem;
-  }
-
-  .about-me {
-    // .about-me-image {
-    //   .attachment-top-aboutme {
-    //     object-fit: cover;
-    //     height: 300px;
-    //     width: 300px;
-    //   }
-    // }
-    .introduce-sentence {
-      font-size: 1rem;
+.second-screen {
+  .right-side {
+    width: 200px;
+    flex-grow: 1;
+    .top-headline {
+      text-align: center;
+      color: white;
+      font-size: 1.5rem;
     }
-  }
-  .tags {
-    width: 100%;
 
-    .tags-list {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      .toTags {
-        font-size: 0.7em;
+    .about-me {
+      .about-me-image {
+        width: 100%;
+        .wp-post-image {
+          width: 200px;
+          width: 200px;
+          display: block;
+          margin: 0 auto;
+        }
       }
-      .toTags--button {
-        background-color: gray;
-        padding: 0.3rem;
-        border-radius: 100vh;
-        border: 1px solid transparent;
-        &:hover {
-          background: black;
-          border: 1px solid gray;
+      .introduce-sentence {
+        font-size: 1rem;
+        overflow-wrap: break-word;
+      }
+    }
+    .tags {
+      width: 100%;
+
+      .tags-list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        .toTags {
+          font-size: 0.7em;
+        }
+        .toTags--button {
+          background-color: gray;
+          padding: 0.3rem;
+          border-radius: 100vh;
+          border: 1px solid transparent;
+          &:hover {
+            background: black;
+            border: 1px solid gray;
+          }
         }
       }
     }
@@ -295,9 +301,7 @@ $color-yellow: #ecc100;
 
       .latest-columns {
         ul {
-          width: 100%;
           li {
-            padding: 1rem;
             .latest-columns-time-tags {
               font-weight: bold;
             }
@@ -314,16 +318,15 @@ $color-yellow: #ecc100;
       }
     }
     .right-side {
+      width: 75%;
       padding-left: 0;
+
+      margin: 0 auto;
       .about-me {
-        width: 75%;
-        margin: 0 auto;
         margin-bottom: 10%;
         margin-top: 20%;
       }
       .tags {
-        width: 75%;
-        margin: 0 auto;
         margin-bottom: 10%;
         line-height: 1.7;
       }
@@ -441,14 +444,6 @@ $color-yellow: #ecc100;
 
   .top-headline {
     font-size: 1.5rem;
-  }
-
-  .left-side {
-    .latest-columns {
-      ul {
-        width: 50vh;
-      }
-    }
   }
 
   .right-side {
