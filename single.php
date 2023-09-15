@@ -31,7 +31,7 @@ get_header();
 
 					<div class="single-details">
 						<div class="single-date">
-							<p><time><?php the_date() ?></time></p>
+							<p><time datetime="<?php the_time('Y-m-d'); ?>"><?php the_date() ?></time></p>
 						</div>
 						<div class="single-category">
 							<p>カテゴリー：</p><?php the_category() ?>
