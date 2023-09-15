@@ -9,21 +9,19 @@ $color-yellow: #ecc100;
 html {
   width: 100%;
   height: fit-content;
-  margin-top: 0 !important;
-  padding-top: 0 !important;
 }
 
 body {
-  background-color: $background-green !important;
+  background-color: $background-green;
 }
 
 ul {
-  padding-left: 0 !important;
+  padding-left: 0;
   color: white;
 }
 
 li {
-  list-style: none !important;
+  list-style: none;
 }
 
 a {
@@ -33,19 +31,20 @@ a {
 
 h1,
 h2,
+h3,
 p,
 a {
-  font-family: "BIZ UDPMincho", serif !important;
+  font-family: "BIZ UDPMincho", serif;
 }
 
 .container {
   width: 100%;
-  padding-top: 20vh;
+  padding-top: 15vh;
   padding-bottom: 5vh;
 }
 
 .first-headline {
-  color: white !important;
+  color: white;
   text-align: center;
 }
 
@@ -78,12 +77,7 @@ a {
     font-size: 1.5rem;
   }
 
-  .container {
-    padding-top: 15vh;
-  }
-
   .breadcrumbs-container {
-    padding-top: 5%;
     li,
     p {
       font-size: 0.8rem;
@@ -92,9 +86,6 @@ a {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1020px) {
-  .container {
-    padding-top: 15vh;
-  }
   .first-headline {
     font-size: 2rem;
   }

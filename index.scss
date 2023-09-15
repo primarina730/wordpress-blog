@@ -3,7 +3,8 @@ $color-green: #005f6f;
 $color-yellow: #ecc100;
 
 .container {
-  padding-top: 0 !important;
+  padding-top: 0;
+  padding-bottom: 20vh;
 }
 
 .top-screen {
@@ -73,9 +74,9 @@ $color-yellow: #ecc100;
 .hover-button {
   display: inline-block;
   padding: 0.6em 2em;
-  background: black !important;
-  color: white !important;
-  border: 1px solid $color-yellow !important;
+  background: black;
+  color: white;
+  border: 1px solid $color-yellow;
   vertical-align: middle;
   text-decoration: none;
   cursor: pointer;
@@ -85,9 +86,9 @@ $color-yellow: #ecc100;
   -o-transition-duration: 0.3s;
   -ms-transition-duration: 0.3s;
   &:hover {
-    background-color: $color-yellow !important;
-    color: black !important;
-    border: 1px solid $color-yellow !important;
+    background-color: $color-yellow;
+    color: black;
+    border: 1px solid $color-yellow;
   }
 }
 
@@ -98,22 +99,22 @@ $color-yellow: #ecc100;
     border-color: gray;
   }
   .search-submit {
-    border: gray solid 2px !important;
+    border: gray solid 2px;
   }
   .search-field:active,
   .search-field:hover,
   .search-submit:active,
   .search-submit:hover {
-    border-color: $color-yellow !important;
+    border-color: $color-yellow;
   }
   .search-field:active,
   .search-field:hover {
-    color: black !important;
+    color: black;
   }
 
   .search-submit:active,
   .search-submit:hover {
-    color: $color-yellow !important;
+    color: $color-yellow;
   }
 }
 
@@ -172,79 +173,78 @@ $color-yellow: #ecc100;
   display: none;
 }
 
-.pickup-part {
-  width: 100%;
-  .top-headline {
-    font-size: 2.5rem;
-    padding-top: 10%;
-    text-align: center;
-  }
-  .slideshow {
-    width: 70vh;
-    margin: 0 auto;
-    .slick-list {
-      .slick-track {
-        height: 58vh;
-        .slick-slide {
-          height: 58vh;
-          padding: 1%;
-
-          .pickup-container {
-            display: block;
-            height: 100%;
-            width: auto;
-            .pickup-link {
+.container {
+  .pickup-part {
+    width: 100%;
+    height: 80vh;
+    .top-headline {
+      font-size: 2.5rem;
+      padding-top: 10%;
+      text-align: center;
+    }
+    .slideshow {
+      width: 70%;
+      margin: 0 auto;
+      .slick-list {
+        width: 100%;
+        .slick-track {
+          width: 100%;
+          .slick-slide {
+            padding: 1%;
+            width: 100%;
+            margin: 0 auto;
+            .pickup-container {
               display: block;
-              height: 100%;
-              width: auto;
-              .pickup-thumbnail {
+              .pickup-link {
                 display: block;
-                height: 100%;
-                width: auto;
-                .attachment-post-thumbnail {
-                  height: 100% !important;
-                  width: auto !important;
-                  max-width: 100% !important;
-                  padding: 5%;
-                  border: 0.4rem solid $color-yellow;
-                  margin: 0 auto;
+                .pickup-thumbnail {
+                  display: block;
+                  height: 100%;
+                  width: auto;
+                  img.attachment-post-thumbnail {
+                    height: 40vh !important;
+                    width: auto !important;
+                    padding: 5%;
+                    border: 0.4rem solid $color-yellow;
+                    margin: 0 auto;
+                  }
                 }
               }
             }
-          }
-          .pickup-title {
-            width: 100%;
-            font-size: 1.5rem;
-            text-align: center;
+            .pickup-title {
+              width: 100%;
+              font-size: 1.5rem;
+              text-align: center;
+            }
           }
         }
       }
-    }
-    .slick-prev {
-      left: -5%;
-      width: 3%;
-      height: 60vh;
-      background-color: aquamarine;
-      z-index: 100;
-      background-color: $background-green !important;
-      &::before {
-        font-size: 25px;
+      .slick-prev {
+        left: -5%;
+        width: 3%;
+        height: 60vh;
+        background-color: aquamarine;
+        z-index: 100;
+        background-color: $background-green;
+        &::before {
+          font-size: 25px;
+        }
       }
-    }
 
-    .slick-next {
-      right: -5%;
-      width: 3%;
-      height: 60vh;
-      background-color: aquamarine;
-      z-index: 100;
-      background-color: $background-green !important;
-      &::before {
-        font-size: 25px;
+      .slick-next {
+        right: -5%;
+        width: 3%;
+        height: 60vh;
+        background-color: aquamarine;
+        z-index: 100;
+        background-color: $background-green;
+        &::before {
+          font-size: 25px;
+        }
       }
-    }
-    .slick-dots {
-      display: none !important;
+      .slick-dots {
+        display: none !important;
+      }
     }
   }
 }
@@ -267,7 +267,7 @@ $color-yellow: #ecc100;
         display: block;
         text-align: center;
         border-color: gray;
-        padding: 2% !important;
+        padding: 2%;
         &:focus {
           border-color: $color-yellow;
         }
@@ -276,9 +276,74 @@ $color-yellow: #ecc100;
   }
 }
 
+@media screen and (max-width: 630px) {
+  .container {
+    padding-bottom: 5vh;
+    .pickup-part {
+      height: 20h;
+      article {
+        .slideshow {
+          width: 90%;
+          .slick-list {
+            .slick-track {
+              .slick-slide {
+                .pickup-container {
+                  .pickup-link {
+                    .pickup-thumbnail {
+                      .attachment-post-thumbnail {
+                        height: 8vh !important;
+                        border: 0.2rem solid $color-yellow;
+                      }
+                    }
+                    .pickup-title {
+                      font-size: 0.8rem;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 630px) and (max-width: 768px) {
+  .container {
+    .pickup-part {
+      article {
+        .slideshow {
+          height: 50vh;
+          width: 90%;
+          .slick-list {
+            .slick-track {
+              .slick-slide {
+                .pickup-container {
+                  .pickup-link {
+                    .pickup-thumbnail {
+                      img.attachment-post-thumbnail {
+                        height: 25vh !important;
+                        border: 0.2rem solid $color-yellow;
+                      }
+                    }
+                    .pickup-title {
+                      font-size: 0.8rem;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   html {
-    line-height: 1 !important;
+    line-height: 1;
   }
 
   .top-screen {
@@ -335,10 +400,10 @@ $color-yellow: #ecc100;
   }
 
   .search-form {
-    flex-wrap: nowrap !important;
+    flex-wrap: nowrap;
     padding-top: 5%;
     padding-bottom: 5%;
-    max-width: 75% !important;
+    max-width: 75%;
     input[type="search"] {
       padding: 0;
     }
@@ -351,7 +416,7 @@ $color-yellow: #ecc100;
     display: block;
     .search-form {
       .search-field {
-        margin-right: 0 !important;
+        margin-right: 0;
       }
     }
   }
@@ -360,77 +425,65 @@ $color-yellow: #ecc100;
     display: none;
   }
 
-  .pickup-part {
-    width: 100%;
-    margin: 0 auto;
-    .top-headline {
-      padding-top: 10%;
-    }
-    .slideshow {
-      width: 40vh;
-      margin: 0 auto;
-      .slick-list {
-        .slick-track {
-          height: 25vh !important;
-          .slick-slide {
-            height: 25vh;
-            padding: 1%;
-            width: 100%;
-            margin: 0 auto;
-            .pickup-container {
-              display: block;
-              height: 100%;
-              margin: auto 0;
-
-              .pickup-link {
-                display: block;
-                height: 100%;
-                margin: 0 auto;
-                .attachment-post-thumbnail {
-                  margin: 0 auto;
-                  border: 0.1rem solid $color-yellow;
-                  text-align: center;
-                }
-                .pickup-title {
-                  font-size: 0.8rem;
+  .container {
+    .pickup-part {
+      height: 40vh;
+      article {
+        .slideshow {
+          width: 90%;
+          .slick-list {
+            .slick-track {
+              .slick-slide {
+                .pickup-container {
+                  .pickup-link {
+                    .pickup-thumbnail {
+                      .attachment-post-thumbnail {
+                        height: 15vh !important;
+                        border: 0.2rem solid $color-yellow;
+                      }
+                    }
+                    .pickup-title {
+                      font-size: 0.8rem;
+                    }
+                  }
                 }
               }
             }
           }
-        }
-      }
-      .slick-prev {
-        left: -1vh;
-        width: 5vh;
-        height: 30vh;
-        background-color: aquamarine;
-        z-index: 100;
-        &::before {
-          font-size: 25px;
-        }
-      }
+          .slick-prev {
+            left: -1vh;
+            width: 5vh;
+            height: 100%;
+            background-color: $background-green;
+            z-index: 100;
+            &::before {
+              font-size: 25px;
+            }
+          }
 
-      .slick-next {
-        right: -1vh;
-        width: 5vh;
-        height: 30vh;
-        background-color: aquamarine;
-        &::before {
-          font-size: 25px;
+          .slick-next {
+            right: -1vh;
+            width: 5vh;
+            height: 100%;
+            background-color: $background-green;
+            &::before {
+              font-size: 25px;
+            }
+          }
+          .slick-dots {
+            display: none !important;
+          }
         }
-      }
-      .slick-dots {
-        display: none !important;
       }
     }
   }
 
   .top-archive-mobile {
-    display: block;
+    display: block !important;
   }
 
   .top-archive-pc {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -451,65 +504,33 @@ $color-yellow: #ecc100;
     }
   }
 
-  .pickup-part {
-    width: 100%;
-    margin: 0 auto;
-    .top-headline {
-      padding-top: 10%;
-    }
-    .slideshow {
-      width: 40vh;
+  .container {
+    .pickup-part {
+      height: 50vh;
       margin: 0 auto;
-      .slick-list {
-        .slick-track {
-          height: 25vh !important;
-          .slick-slide {
-            height: 25vh;
-            padding: 1%;
-            .pickup-container {
-              height: 100%;
-              margin: auto 0;
-              .pickup-link {
-                display: block;
-                height: 100%;
-                .attachment-post-thumbnail {
-                  height: 100% !important;
-                  width: auto !important;
-                  max-width: 100% !important;
-                  padding: 5%;
-                  border: 0.2rem solid $color-yellow;
-                  margin: 0 auto;
+      article {
+        .slideshow {
+          width: 60%;
+          .slick-list {
+            .slick-track {
+              .slick-slide {
+                .pickup-container {
+                  .pickup-link {
+                    .pickup-thumbnail {
+                      img.attachment-post-thumbnail {
+                        height: 30vh !important;
+                        border: 0.2rem solid $color-yellow;
+                      }
+                    }
+                    .pickup-title {
+                      font-size: 1rem;
+                    }
+                  }
                 }
-              }
-              .pickup-title {
-                font-size: 1rem;
               }
             }
           }
         }
-      }
-      .slick-prev {
-        left: -1vh;
-        width: 5vh;
-        height: 30vh;
-        background-color: aquamarine;
-        z-index: 100;
-        &::before {
-          font-size: 25px;
-        }
-      }
-
-      .slick-next {
-        right: -1vh;
-        width: 5vh;
-        height: 30vh;
-        background-color: aquamarine;
-        &::before {
-          font-size: 25px;
-        }
-      }
-      .slick-dots {
-        display: none !important;
       }
     }
   }

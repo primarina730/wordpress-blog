@@ -3,17 +3,17 @@ $color-green: #005f6f;
 $color-yellow: #ecc100;
 
 article {
-  max-width: 800px !important;
-  border-bottom: 3px solid $color-yellow !important;
+  max-width: 800px;
+  border-bottom: 3px solid $color-yellow;
   margin: 0 auto;
   &:last-child {
-    border-bottom: none !important;
-    padding-bottom: 0 !important;
+    border-bottom: none;
+    padding-bottom: 0;
   }
 }
 
 .page-header {
-  border-bottom: 3px solid $color-yellow !important;
+  border-bottom: 3px solid $color-yellow;
   .page-title {
     font-size: 2rem;
   }
@@ -24,30 +24,37 @@ article {
 
   .search-field,
   .search-submit {
-    border: gray solid 2px !important;
+    border: gray solid 2px;
   }
   .search-field:active,
   .search-field:hover,
   .search-submit:active,
   .search-submit:hover {
-    border-color: $color-yellow !important;
+    border-color: $color-yellow;
   }
   .search-field:active,
   .search-field:hover {
-    color: black !important;
+    color: black;
   }
 
   .search-submit:active,
   .search-submit:hover {
-    color: $color-yellow !important;
+    color: $color-yellow;
   }
 }
 
 .entry-header {
-  margin-bottom: 0 !important;
+  margin-bottom: 0;
   .entry-title {
     font-size: 2rem;
     text-align: center;
+    color: white;
+  }
+}
+
+.entry-content {
+  p {
+    font-family: "BIZ UDPMincho", serif;
   }
 }
 
@@ -71,7 +78,7 @@ article {
 @media screen and (max-width: 768px) {
   article {
     width: 100%;
-    max-width: 400px !important;
+    max-width: 400px;
   }
 
   .container {
@@ -79,21 +86,21 @@ article {
   }
 
   img {
-    width: 60% !important;
+    width: 60%;
   }
 
   .page-header {
-    border-color: $color-yellow !important;
+    border-color: $color-yellow;
     .page-title {
       padding-top: 50%;
     }
   }
 
   .search-form {
-    flex-wrap: nowrap !important;
+    flex-wrap: nowrap;
     padding-top: 5%;
     padding-bottom: 5%;
-    max-width: 75% !important;
+    max-width: 75%;
     input[type="search"] {
       padding: 0;
     }
@@ -106,7 +113,7 @@ article {
     display: block;
     .search-form {
       .search-field {
-        margin-right: 0 !important;
+        margin-right: 0;
       }
     }
   }
@@ -120,14 +127,14 @@ article {
     font-size: 0.9rem;
   }
   .entry-footer {
-    font-size: 0.7rem !important;
+    font-size: 0.7rem;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1020px) {
   article {
     width: 100%;
-    max-width: 600px !important;
+    max-width: 600px;
   }
 
   .entry-header {
@@ -141,6 +148,6 @@ article {
   }
 
   .entry-footer {
-    font-size: 0.7rem !important;
+    font-size: 0.7rem;
   }
 }

@@ -73,7 +73,7 @@ textarea.wpcf7-form-control.wpcf7-textarea {
 .page-page {
   margin: 0 auto;
   width: fit-content;
-  background-color: $background-green !important;
+  background-color: $background-green;
   text-align: center;
 
   .contact_information {
@@ -82,7 +82,7 @@ textarea.wpcf7-form-control.wpcf7-textarea {
   }
 
   p {
-    font-size: 1rem !important;
+    font-size: 1rem;
   }
 }
 
@@ -118,19 +118,19 @@ textarea.wpcf7-form-control.wpcf7-textarea {
 }
 
 .wpcf7-response-output {
-  color: white !important;
+  color: white;
 }
 
 .comments-title {
-  color: $color-green !important;
+  color: $color-green;
 }
 
 .wp-block-code {
-  padding: 0 !important;
+  padding: 0;
 }
 
 .wp-block-image {
-  margin: 0 !important;
+  margin: 0;
 }
 
 .contact-must {

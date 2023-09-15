@@ -2,33 +2,23 @@ $background-green: #002f37;
 $color-green: #005f6f;
 $color-yellow: #ecc100;
 
-html {
-  padding-bottom: 0 !important;
-}
-
-body {
-  background-color: $background-green !important;
-}
-
 .archive-page {
-  background-color: $background-green !important;
   text-align: center;
   width: 100%;
   .category-nav {
     .categories {
-      padding-left: 0 !important;
       .cat-item {
         text-transform: capitalize;
         a {
           &:hover {
-            color: $color-yellow !important;
+            color: $color-yellow;
           }
         }
         &.current-cat {
           & a[aria-current="page"] {
             text-decoration: underline;
             text-decoration-color: $color-green;
-            color: $color-yellow !important;
+            color: $color-yellow;
           }
         }
       }
@@ -106,7 +96,7 @@ body {
       gap: 5%;
       .blog-list__list-item {
         .blog-item__title {
-          font-size: 0.8rem !important;
+          font-size: 0.6rem;
         }
       }
       .blog-item__content {
@@ -120,7 +110,7 @@ body {
 
 @media (min-width: 768px) and (max-width: 1020px) {
   .container {
-    padding-bottom: 40vh !important;
+    padding-bottom: 40vh;
   }
   .cat-item {
     font-size: 1rem;
@@ -129,6 +119,6 @@ body {
 
 @media (min-width: 1024px) {
   .container {
-    padding-bottom: 20vh !important;
+    padding-bottom: 20vh;
   }
 }
