@@ -79,9 +79,7 @@ $color-yellow: #ecc100;
     .recommend-column {
       .to-recommend-column {
         display: block;
-        .attachment-l-size {
-          filter: grayscale(50%);
-        }
+        margin: 3%;
 
         .recommend-column-title {
           font-size: 1rem;
@@ -93,10 +91,7 @@ $color-yellow: #ecc100;
         }
       }
       &:hover {
-        .attachment-l-size {
-          filter: grayscale(0%);
-        }
-
+        background-color: $color-green;
         .recommend-column-title {
           color: $color-yellow;
         }
@@ -106,9 +101,9 @@ $color-yellow: #ecc100;
 }
 
 @media screen and (max-width: 768px) {
-  .container {
-    padding-top: 15vh;
-  }
+  // .container {
+  //   padding-top: 15vh;
+  // }
   .single-page {
     .first-headline {
       font-size: 1rem;
