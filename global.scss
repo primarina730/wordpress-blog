@@ -83,19 +83,20 @@ a {
 
   .breadcrumbs-part {
     padding-top: 10%;
+    font-size: 0.5rem;
     .breadcrumbs-container {
       &.latter {
+        font-size: 1px;
         &::before {
           content: ">";
           color: $color-yellow;
-          font-size: 0.8rem;
         }
       }
       .breadcrumbs-signpost {
         line-height: 0.8rem;
-        a {
-          font-size: 0.8rem;
-        }
+        // a {
+        //   font-size: 1px;
+        // }
       }
     }
   }
@@ -106,17 +107,17 @@ a {
     font-size: 2rem;
   }
   .breadcrumbs-container {
+    font-size: 1rem;
     &.latter {
       &::before {
         content: ">";
         color: $color-yellow;
-        font-size: 1rem;
       }
     }
-    .breadcrumbs-signpost {
-      a {
-        font-size: 1rem;
-      }
-    }
+    // .breadcrumbs-signpost {
+    //   a {
+    //     font-size: 1rem;
+    //   }
+    // }
   }
 }
