@@ -77,10 +77,39 @@ a {
   .first-headline {
     font-size: 1.5rem;
   }
+
+  .breadcrumbs-container {
+    &.latter {
+      &::before {
+        content: ">";
+        color: $color-yellow;
+        font-size: 0.8rem;
+      }
+    }
+    .breadcrumbs-signpost {
+      a {
+        font-size: 0.8rem;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1020px) {
   .first-headline {
     font-size: 2rem;
+  }
+  .breadcrumbs-container {
+    &.latter {
+      &::before {
+        content: ">";
+        color: $color-yellow;
+        font-size: 1rem;
+      }
+    }
+    .breadcrumbs-signpost {
+      a {
+        font-size: 1rem;
+      }
+    }
   }
 }
