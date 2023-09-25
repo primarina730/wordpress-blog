@@ -53,11 +53,15 @@ a {
 }
 
 .breadcrumbs-part {
+  width: 100%;
   .breadcrumbs-container {
+    flex-wrap: wrap;
+    width: 100%;
     display: flex;
     padding-left: 5%;
     padding-bottom: 3%;
     .breadcrumbs-signpost {
+      white-space: nowrap;
       &.latter {
         &::before {
           content: ">";
