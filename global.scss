@@ -81,18 +81,21 @@ a {
     font-size: 1.5rem;
   }
 
-  .breadcrumbs-container {
-    &.latter {
-      &::before {
-        content: ">";
-        color: $color-yellow;
-        font-size: 0.8rem;
+  .breadcrumbs-part {
+    padding-top: 10%;
+    .breadcrumbs-container {
+      &.latter {
+        &::before {
+          content: ">";
+          color: $color-yellow;
+          font-size: 0.8rem;
+        }
       }
-    }
-    .breadcrumbs-signpost {
-      line-height: 0.8rem;
-      a {
-        font-size: 0.8rem;
+      .breadcrumbs-signpost {
+        line-height: 0.8rem;
+        a {
+          font-size: 0.8rem;
+        }
       }
     }
   }
