@@ -220,7 +220,11 @@ function add_ogp_metas()
         $ogp .= '<meta property="og:type" content="' . $ogp_type . '">' . "\n";
         $ogp .= '<meta property="og:url" content="' . esc_url($ogp_url) . '">' . "\n";
         $ogp .= '<meta property="og:title" content="' . esc_attr($ogp_title) . '">' . "\n";
-        $ogp .= '<meta property="og:description" content="' . esc_attr($ogp_description) . '">' . "\n";
+        if (is_home()) {
+            $ogp .= '<meta property="og:description" content="中身のないブログ">' . "\n";
+        } else {
+            $ogp .= '<meta property="og:description" content="' . esc_attr($ogp_description) . '">' . "\n";
+        }
         $ogp .= '<meta property="og:image" content="' . esc_url($ogp_image) . '">' . "\n";
         $ogp .= '<meta property="og:site_name" content="' . esc_attr($ogp_site_name) . '">' . "\n";
         $ogp .= '<meta property="og:locale" content="' . esc_attr($ogp_locale) . '">' . "\n";

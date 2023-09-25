@@ -15,6 +15,7 @@
 use function PHPSTORM_META\type;
 
 get_header();
+
 ?>
 <div class="top-screen">
 </div>
