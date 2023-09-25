@@ -39,7 +39,7 @@ a {
 
 .container {
   width: 100%;
-  padding-top: 15vh;
+  padding-top: 17vh;
   padding-bottom: 5vh;
 }
 
@@ -52,22 +52,23 @@ a {
   font-size: 2.5rem;
 }
 
-.breadcrumbs-container {
-  padding-left: 2%;
-  line-height: 0;
-  ul,
-  li,
-  p {
-    display: inline-block;
-  }
-  .breadcrumbs-arrow {
-    color: $color-yellow;
-  }
-  li,
-  .breadcrumbs-signpost {
-    border-bottom: 1px dashed transparent;
-    &:hover {
-      border-bottom: 1px dashed $color-yellow;
+.breadcrumbs-part {
+  .breadcrumbs-container {
+    display: flex;
+    padding-left: 5%;
+    padding-bottom: 3%;
+    .breadcrumbs-signpost {
+      &.latter {
+        &::before {
+          content: ">";
+          color: $color-yellow;
+        }
+      }
+      a {
+        &:hover {
+          border-bottom: dotted 1px $color-yellow;
+        }
+      }
     }
   }
 }
@@ -76,25 +77,10 @@ a {
   .first-headline {
     font-size: 1.5rem;
   }
-
-  .breadcrumbs-container {
-    li,
-    p {
-      font-size: 0.8rem;
-    }
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1020px) {
   .first-headline {
     font-size: 2rem;
-  }
-
-  .breadcrumbs-container {
-    ul,
-    li,
-    p {
-      font-size: 0.8rem;
-    }
   }
 }

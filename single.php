@@ -54,4 +54,5 @@ get_header();
 		?>
 	</div>
 </article>
+<?php get_template_part('recommend'); ?>
 <?php get_footer() ?>

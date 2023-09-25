@@ -60,5 +60,8 @@
 	</header>
 	<main>
 		<div class="container">
-			<?php get_template_part('breadcrumbs');
-			?>
+
+			<?php
+			if (!is_home()) {
+				get_template_part('breadcrumbs');
+			};
