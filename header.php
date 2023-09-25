@@ -40,10 +40,10 @@
 <body>
 	<header>
 		<div class="titleAndNavigator">
-			<div>
+			<div class="ise-blogtitle">
 				<h1><a href=<?php echo home_url('/'); ?> class="blogTitle">Inside&nbsp;<br class="sp_br">Emma's&nbsp;<br class="sp_br">Case</a></h1>
 			</div>
-			<div>
+			<div class="ise-blogmenu">
 				<nav>
 					<ul class="nav-menu">
 						<li><a href=<?php echo (get_post_type_archive_link("post") . "/blog") ?> class="ap_navigation">All Columns</a></li>
