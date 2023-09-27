@@ -72,8 +72,7 @@ get_header();
 		<div class="top-archive-mobile">
 			<div class="top-archive-part">
 				<div class="archive-dropdown-part">
-					<label for="monthly-archive">Archive</label>
-					<select class="archive-dropdown-select" id="monthly-archive" onChange='document.location.href=this.options[this.selectedIndex].value;'>
+					<select class="archive-dropdown-select" onChange='document.location.href=this.options[this.selectedIndex].value;'>
 						<option value="">Archive</option>
 						<?php wp_get_archives('type=monthly&format=option&show_post_count=1'); ?>
 					</select>
@@ -124,8 +123,7 @@ get_header();
 		<div class="top-archive-pc">
 			<div class="top-archive-part">
 				<div class="archive-dropdown-part">
-					<label for="monthly-archive"></label>
-					<select class="archive-dropdown-select" id="monthly-archive" onChange='document.location.href=this.options[this.selectedIndex].value;'>
+					<select class="archive-dropdown-select" onChange='document.location.href=this.options[this.selectedIndex].value;'>
 						<option value="">Archive</option>
 						<?php wp_get_archives('type=monthly&format=option&show_post_count=1'); ?>
 					</select>

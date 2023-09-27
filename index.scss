@@ -92,32 +92,6 @@ $color-yellow: #ecc100;
   }
 }
 
-.search-form {
-  display: flex;
-
-  .search-field {
-    border-color: gray;
-  }
-  .search-submit {
-    border: gray solid 2px;
-  }
-  .search-field:active,
-  .search-field:hover,
-  .search-submit:active,
-  .search-submit:hover {
-    border-color: $color-yellow;
-  }
-  .search-field:active,
-  .search-field:hover {
-    color: black;
-  }
-
-  .search-submit:active,
-  .search-submit:hover {
-    color: $color-yellow;
-  }
-}
-
 .second-screen {
   .right-side {
     width: 200px;
@@ -165,6 +139,17 @@ $color-yellow: #ecc100;
           }
         }
       }
+    }
+  }
+}
+
+.search-form {
+  .search-label-conainer {
+    input[type="search"] {
+      grid-column: 1/3;
+    }
+    input[type="submit"] {
+      grid-column: 3/4;
     }
   }
 }
@@ -399,26 +384,8 @@ $color-yellow: #ecc100;
     }
   }
 
-  .search-form {
-    flex-wrap: nowrap;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    max-width: 75%;
-    input[type="search"] {
-      padding: 0;
-    }
-    input[type="submit"] {
-      padding: 0 5%;
-      font-size: 0.5rem;
-    }
-  }
   .mobile-search {
     display: block;
-    .search-form {
-      .search-field {
-        margin-right: 0;
-      }
-    }
   }
 
   .pc-search {

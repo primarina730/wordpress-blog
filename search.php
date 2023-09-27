@@ -57,8 +57,7 @@
 					*/ ?>
 
 
-					<article>
-				<?php
+			<?php
 					get_template_part('template-parts/content/content-excerpt', get_post_format());
 				} // End the loop.
 
@@ -69,8 +68,9 @@
 			} else {
 				get_template_part('template-parts/content/content-none');
 			}
-				?>
-					</article>
+			?>
 		</div>
 	</article>
+
+
 	<?php get_footer() ?>
