@@ -44,6 +44,7 @@ $color-yellow: #ecc100;
 }
 
 .search-form {
+  display: grid;
   .search-field,
   .search-submit {
     border: gray solid 2px;
@@ -63,8 +64,8 @@ $color-yellow: #ecc100;
   .search-submit:hover {
     color: $color-yellow;
   }
-  width: 80%;
-  & > label {
+  width: 100%;
+  .search-label-container {
     display: grid;
     height: 60px;
     gap: 3%;
@@ -85,7 +86,6 @@ $color-yellow: #ecc100;
   input[type="submit"] {
     top: 0;
     font-size: 1rem !important;
-    padding: 3% 6%;
     font-size: 0.5rem;
     grid-column: 3/4;
   }
@@ -159,7 +159,7 @@ $color-yellow: #ecc100;
 
   .search-form {
     width: 80%;
-    & > label {
+    .search-label-container {
       display: grid;
       gap: 3%;
     }
@@ -218,7 +218,7 @@ $color-yellow: #ecc100;
   }
 
   .search-form {
-    & > label {
+    .search-label-container {
       height: 40px;
     }
     input[type="submit"] {
@@ -228,7 +228,7 @@ $color-yellow: #ecc100;
 }
 @media (min-width: 400px) and (max-width: 768px) {
   .search-form {
-    & > label {
+    .search-label-container {
       height: 20px;
     }
     input[type="search"] {
@@ -242,7 +242,7 @@ $color-yellow: #ecc100;
 
 @media screen and (max-width: 400px) {
   .search-form {
-    & > label {
+    .search-label-container {
       height: 20px;
     }
     input[type="search"] {
