@@ -100,7 +100,7 @@ get_header();
 					$image_square = $image_height;
 				}
 				?>
-				<?php echo '<div class="about-me-image">' . get_the_post_thumbnail($page_id, array(300, 300)) . '</div>'; ?>
+				<?php echo '<div class="about-me-image">' . get_the_post_thumbnail($page_id, array(200, 200)) . '</div>'; ?>
 				<p class="introduce-sentence">浅く広く投稿していきます。</p>
 				<p class="introduce-sentence">31アイスでもチョコミントアイスを選ぶぐらいチョコミントアイスが好き</p>
 			</div>

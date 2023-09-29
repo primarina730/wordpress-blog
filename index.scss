@@ -35,7 +35,7 @@ $color-yellow: #ecc100;
   .left-side {
     padding-right: 10%;
     width: 200px;
-    flex-grow: 3;
+    flex-grow: 2;
     .latest-columns {
       margin-bottom: 10%;
       width: 100%;
@@ -106,8 +106,6 @@ $color-yellow: #ecc100;
       .about-me-image {
         width: 100%;
         .wp-post-image {
-          width: 200px;
-          width: 200px;
           display: block;
           margin: 0 auto;
         }
@@ -294,7 +292,7 @@ $color-yellow: #ecc100;
   }
 }
 
-@media screen and (min-width: 630px) and (max-width: 768px) {
+@media (min-width: 630px) and (max-width: 768px) {
   .container {
     .pickup-part {
       article {
@@ -454,7 +452,7 @@ $color-yellow: #ecc100;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1020px) {
+@media (min-width: 768px) and (max-width: 1020px) {
   .top-screen {
     background-position: 40% 50%;
   }
@@ -475,6 +473,7 @@ $color-yellow: #ecc100;
     .pickup-part {
       height: 50vh;
       margin: 0 auto;
+      padding-bottom: 5%;
       article {
         .slideshow {
           width: 60%;
