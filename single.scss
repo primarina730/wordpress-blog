@@ -39,6 +39,7 @@ $color-yellow: #ecc100;
       &.liquid-speech-balloon-wrap {
         margin-bottom: 0rem !important;
         .liquid-speech-balloon-text {
+          border-radius: 5px;
           width: 70%;
           p {
             color: black;
