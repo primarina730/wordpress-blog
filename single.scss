@@ -22,9 +22,9 @@ $color-yellow: #ecc100;
     margin: 0 auto;
   }
   .columns-sentence-surround {
-    width: 60%;
     margin: 0 auto;
     .columns-sentence-part {
+      width: 55%;
       font-size: 1rem;
       width: fit-content;
       margin: 0 auto;
@@ -49,7 +49,14 @@ $color-yellow: #ecc100;
     }
   }
   .single-details {
+    padding-top: 1%;
+    width: 40%;
+    margin: 0 auto;
     font-size: 0.7rem;
+    p {
+      text-align: left;
+    }
+
     .single-category {
       display: flex;
     }

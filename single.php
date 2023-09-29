@@ -28,20 +28,21 @@ get_header();
 					<?php
 					the_content();
 					?>
-
-					<div class="single-details">
-						<div class="single-date">
-							<p><time datetime="<?php the_time('Y-m-d'); ?>"><?php the_date() ?></time></p>
-						</div>
-						<div class="single-category">
-							<p>カテゴリー：</p><?php the_category() ?>
-						</div>
-						<div class="single-tags">
-							<p><?php the_tags(); ?></p>
-						</div>
-					</div>
 				</div>
 			</div>
+
+			<div class="single-details">
+				<div class="single-date">
+					<p><time datetime="<?php the_time('Y-m-d'); ?>"><?php the_date() ?></time></p>
+				</div>
+				<div class="single-category">
+					<p>カテゴリー：</p><?php the_category() ?>
+				</div>
+				<div class="single-tags">
+					<p><?php the_tags(); ?></p>
+				</div>
+			</div>
+
 
 		<?php
 
