@@ -238,7 +238,7 @@ function add_ogp_metas()
         // meta タグを出力
 
     }
-    if (is_home() || (is_404()) || (is_search()) || (is_archive()) || (is_page())) {
+    if ((is_home()) || (is_404()) || (is_search()) || (is_archive()) || (is_page())) {
         $ogp .= '<meta property="og:description" content="中身のないブログ">' . "\n";
         $ogp .= '<meta name="description" content="犬好きの犬について記載しないブログ">' . "\n";
     } else {

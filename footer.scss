@@ -1,0 +1,15 @@
+.em-copyright {
+  position: relative;
+  bottom: 0.5%;
+  padding-bottom: 1%;
+  p {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1020px) {
+  .em-copyright {
+    padding-top: 15%;
+    padding-bottom: 0;
+  }
+}
