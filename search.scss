@@ -17,8 +17,8 @@ $color-yellow: #ecc100;
         article {
           text-align: center;
           position: relative;
-          padding-bottom: 3%;
-          padding-top: 3%;
+          padding-bottom: 5%;
+          padding-top: 5%;
           &::after {
             position: absolute; /*--positionを追加--*/
             content: "";
@@ -41,8 +41,24 @@ $color-yellow: #ecc100;
             margin-top: 0 !important;
           }
           .part-of-content {
+            padding-top: 3%;
             width: 55%;
             margin: 0 auto;
+            p {
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+            }
+          }
+          .searched-column-detail {
+            padding-top: 1%;
+            width: 40%;
+            margin: 0 auto;
+            p {
+              font-size: 0.6rem;
+              text-align: left;
+            }
           }
         }
         :last-child {
@@ -57,15 +73,27 @@ $color-yellow: #ecc100;
 
 @media screen and (max-width: 768px) {
   .container {
-    .searched-columns-container {
-      .each-searched-column {
-        .first-headline {
+    .search-page {
+      .page-header {
+        .page-title {
           font-size: 1rem;
         }
+      }
+      .searched-columns-container {
+        .each-searched-column {
+          .first-headline {
+            font-size: 0.9rem;
+          }
 
-        .part-of-content {
-          p {
-            font-size: 0.8rem;
+          .part-of-content {
+            p {
+              font-size: 0.7rem;
+            }
+          }
+          .searched-column-detail {
+            p {
+              font-size: 0.5rem;
+            }
           }
         }
       }
@@ -83,7 +111,7 @@ $color-yellow: #ecc100;
 
         .part-of-content {
           p {
-            font-size: 1rem;
+            font-size: 0.8rem;
           }
         }
       }

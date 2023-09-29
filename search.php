@@ -70,6 +70,23 @@
 									// ４、出力する
 									echo '<div class="part-of-content"><p>' . $content . '</p></div>';
 									?>
+									<div class="searched-column-detail">
+										<p class="searched-column-time">投稿日：<time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time(get_option('date_format')); ?></time></p>
+										<?php $categories = get_the_category();
+										$tags = get_the_tags();
+
+										if ($categories) {
+											echo '<p>カテゴリー：' . $categories[0]->name . '</p>';
+										}
+										if ($tags) {
+											echo '<p>';
+											foreach ($tags as $tag) {
+												echo '#' . $tag->name . '&nbsp;';
+											}
+											echo '</p>';
+										}
+										?>
+									</div>
 								</div>
 							</a>
 						</article>
