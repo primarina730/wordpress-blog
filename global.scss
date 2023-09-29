@@ -82,8 +82,8 @@ a {
   }
 
   .breadcrumbs-part {
-    padding-top: 10%;
-    font-size: 0.8rem;
+    // padding-top: 10%;
+    font-size: 0.6rem;
     .breadcrumbs-container {
       &.latter {
         font-size: 1px;
@@ -92,12 +92,12 @@ a {
           color: $color-yellow;
         }
       }
-      .breadcrumbs-signpost {
-        line-height: 1.5rem;
-        // a {
-        //   font-size: 1px;
-        // }
-      }
+      // .breadcrumbs-signpost {
+      //   line-height: 1.5rem;
+      //   a {
+      //     font-size: 1px;
+      //   }
+      // }
     }
   }
 }
