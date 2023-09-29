@@ -18,7 +18,7 @@
 			?>
 
 				<header class="page-header alignwide">
-					<h1 class="first-headline">
+					<h2 class="page-title">
 						<?php
 						printf(
 							/* translators: %s: Search term. */
@@ -26,7 +26,7 @@
 							'<span class="page-description search-term">' . esc_html(get_search_query()) . '</span>'
 						);
 						?>
-					</h1>
+					</h2>
 				</header><!-- .page-header -->
 
 				<div class="search-result-count default-max-width">
@@ -46,30 +46,50 @@
 					?>
 				</div><!-- .search-result-count -->
 				<?php get_search_form() ?>
-				<?php
-				// Start the Loop.
-				while (have_posts()) {
-					the_post();
-					/*
+				<div class="searched-columns-container">
+					<?php
+					// Start the Loop.
+					while (have_posts()) {
+						the_post();
+						/*
 					* Include the Post-Format-specific template for the content.
 					* If you want to override this in a child theme, then include a file
 					* called content-___.php (where ___ is the Post Format name) and that will be used instead.
 					*/ ?>
+						<article>
+							<a href="<?php the_permalink(); ?>" class="to-each-searched-column">
+								<div class="each-searched-column">
+									<?php the_title('<h3 class="first-headline">', '</h3>');
+									the_post_thumbnail();
+									$content = get_the_content();
+
+									$content = wp_strip_all_tags($content);
+
+									$content = strip_shortcodes($content);
+
+									// ４、出力する
+									echo '<div class="part-of-content"><p>' . $content . '</p></div>';
+									?>
+								</div>
+							</a>
+						</article>
 
 
-			<?php
-					get_template_part('template-parts/content/content-excerpt', get_post_format());
-				} // End the loop.
+					<?php
 
-				// Previous/next page navigation.
-				twenty_twenty_one_the_posts_navigation();
-
-				// If no content, include the "No posts found" template.
-			} else {
-				get_template_part('template-parts/content/content-none');
-			}
-			?>
+						// get_template_part('template-parts/content/content-excerpt', get_post_format());
+					} // End the loop.
+					// Previous/next page navigation.
+					// twenty_twenty_one_the_posts_navigation();
+					?>
+				</div><?php
+						// If no content, include the "No posts found" template.
+					} else {
+						get_template_part('template-parts/content/content-none');
+					}
+						?>
 		</div>
+
 	</article>
 
 

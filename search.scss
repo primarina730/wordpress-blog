@@ -5,122 +5,88 @@ $color-yellow: #ecc100;
   width: 100%;
   article {
     margin: 0 auto;
-    article {
-      position: relative;
-      padding-bottom: 3%;
-      padding-top: 3%;
-      &::after {
-        position: absolute; /*--positionを追加--*/
-        content: "";
-        top: 100%;
-        left: 50%;
-        width: 90%;
-        height: 3px;
-        background-color: gray; /*--縦線の色--*/
-        transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
+    width: 100%;
+    .search-page {
+      .page-header {
+        border-bottom: 3px solid $color-yellow;
+        .page-title {
+          font-size: 2rem;
+        }
       }
-    }
-    &:last-child {
-      &::after {
-        display: none;
+      .searched-columns-container {
+        article {
+          text-align: center;
+          position: relative;
+          padding-bottom: 3%;
+          padding-top: 3%;
+          &::after {
+            position: absolute; /*--positionを追加--*/
+            content: "";
+            top: 100%;
+            left: 50%;
+            width: 80%;
+            height: 3px;
+            background-color: gray; /*--縦線の色--*/
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+          }
+          .first-headline {
+            font-size: 1.8rem;
+            width: 70%;
+            margin: 0 auto;
+          }
+          .wp-post-image {
+            width: 40% !important;
+            margin-top: 0 !important;
+          }
+          .part-of-content {
+            width: 55%;
+            margin: 0 auto;
+          }
+        }
+        :last-child {
+          &::after {
+            display: none;
+          }
+        }
       }
-    }
-  }
-}
-
-.page-header {
-  border-bottom: 3px solid $color-yellow;
-  .page-title {
-    font-size: 2rem;
-  }
-}
-
-.entry-header {
-  margin-bottom: 0;
-  margin-top: 0;
-  .entry-title {
-    font-size: 2rem;
-    text-align: center;
-    color: white;
-  }
-}
-
-.entry-content {
-  p {
-    font-family: "BIZ UDPMincho", serif;
-  }
-}
-
-.entry-footer {
-  .tags-links {
-    display: none;
-  }
-}
-
-.post-thumbnail {
-  width: 100%;
-  .post-thumbnail-inner {
-    width: 60% !important;
-    .wp-post-image {
-      width: 60% !important;
-      margin-top: 0 !important;
     }
   }
 }
 
 @media screen and (max-width: 768px) {
   .container {
-    padding-top: 20vh;
-    article {
-      width: 80%;
-      article {
-        width: 100%;
-        &::after {
-          width: 100%;
+    .searched-columns-container {
+      .each-searched-column {
+        .first-headline {
+          font-size: 1rem;
+        }
+
+        .part-of-content {
+          p {
+            font-size: 0.8rem;
+          }
         }
       }
     }
   }
-
-  img {
-    width: 60%;
-  }
-
-  .page-header {
-    border-color: $color-yellow;
-    .page-title {
-      padding-top: 50%;
-    }
-  }
-
-  .entry-header {
-    .entry-title {
-      font-size: 1.2rem;
-      text-align: center;
-    }
-  }
-  .entry-content {
-    font-size: 0.9rem;
-  }
-  .entry-footer {
-    font-size: 0.7rem;
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1020px) {
-  .entry-header {
-    .entry-title {
-      font-size: 1.5rem;
+  .container {
+    .searched-columns-container {
+      .each-searched-column {
+        .first-headline {
+          font-size: 1.5rem;
+        }
+
+        .part-of-content {
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
     }
-  }
-
-  .entry-content {
-    font-size: 1rem;
-  }
-
-  .entry-footer {
-    font-size: 0.7rem;
   }
 }

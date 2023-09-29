@@ -224,14 +224,19 @@ function add_ogp_metas()
 
         if (is_home()) {
             $ogp .= '<meta property="og:description" content="中身のないブログ">' . "\n";
-        } else {
+            $ogp .= '<meta name="description" content="犬好きの犬について記載しないブログ">' . "\n";
+        } else if (is_archive() || (is_page())) {
+            $ogp .= '<meta property="og:description" content="アーカイブページ' . esc_attr($ogp_title) . '">' . "\n";
+            $ogp .= '<meta name="description" content="' . esc_attr($ogp_title) . '">' . "\n";
+        } else if (is_single() || (is_404()) || (is_search())) {
             $ogp .= '<meta property="og:description" content="' . esc_attr($ogp_description) . '">' . "\n";
+            $ogp .= '<meta name="description" content="' . esc_attr($ogp_description) . '">' . "\n";
         }
         $ogp .= '<meta property="og:image" content="' . esc_url($ogp_image) . '">' . "\n";
         $ogp .= '<meta property="og:site_name" content="' . esc_attr($ogp_site_name) . '">' . "\n";
         $ogp .= '<meta property="og:locale" content="' . esc_attr($ogp_locale) . '">' . "\n";
         $ogp .= '<meta name="twitter:card" content="' . $twitter_card_type . '">' . "\n";
-        $ogp .= '<meta name="description" content="' . $ogp_title . '">' . "\n";
+
         // $twitter_site_username に値が設定されていれば
         if (!empty($twitter_site_username)) {
             $ogp .= '<meta name="twitter:site" content="' . $twitter_site_username . '">' . "\n";
